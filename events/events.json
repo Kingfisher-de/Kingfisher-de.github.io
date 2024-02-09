@@ -1,0 +1,687 @@
+{
+    "MRMCD": [
+        {
+            "name_long": "MetaRheinMainChaosDays",
+            "link": "https://2024.mrmcd.net/",
+            "genre": "Chaos-Event",
+            "human_readable_location": "Darmstadt, Hesse",
+            "machine_readable_location": "49.87771,8.65501",
+            "frequency": "Yearly",
+            "start": "2024-10-03",
+            "end": "2024-10-06 (afternoon)"
+        }
+    ],
+    "FSCK": [
+        {
+            "genre": "Chaos-Event",
+            "human_readable_location": "Backnang, Baden-Württemberg",
+            "machine_readable_location": "48.94887,9.43436",
+            "frequency": "Yearly",
+            "expected_attendees": "110",
+            "dev_comment": "Source for expected_attendees: Estimation by Patrick from Hacknang",
+            "start": "2024-05-03",
+            "end": "2024-05-05 (teardown starts 18:00)"
+        }
+    ],
+    "Furvester": [
+        {
+            "link": "https://furvester.org/",
+            "genre": "Furry-Convention",
+            "human_readable_location": "Reutlingen, Baden-Württemberg",
+            "machine_readable_location": "48.49970,9.15071",
+            "frequency": "Yearly",
+            "expected_attendees": "640",
+            "start": "2024-12-29",
+            "end": "2025-01-02"
+        }
+    ],
+    "FOSDEM": [
+        {
+            "link": "https://fosdem.org/",
+            "genre": "IT-Event",
+            "human_readable_location": "Brussels, Belgium",
+            "machine_readable_location": "50.81237,4.38073",
+            "frequency": "Yearly",
+            "expected_attendees": "5000",
+            "ticket_price": "No Registration Required",
+            "start": "2024-02-03",
+            "end": "2024-02-04"
+        }
+    ],
+    "Hackerhotel": [
+        {
+            "link": "https://hackerhotel.nl/",
+            "genre": "IT-Event",
+            "human_readable_location": "Garderen, Netherlands",
+            "machine_readable_location": "52.22075,5.72109",
+            "frequency": "Yearly",
+            "ticket_price": "190 -  300 € (includes Hotel)",
+            "expected_attendees": "350",
+            "dev_comment": "Source for expected_attendees: Here it says https://hackerhotel.nl/?page_id=3867 there are two groups of 175 people.",
+            "start": "2024-02-09",
+            "end": "2024-02-11"
+        }
+    ],
+    "MountainBytes": [
+        {
+            "link": "https://www.mountainbytes.ch/",
+            "genre": "IT-Event",
+            "human_readable_location": "Cham, Switzerland",
+            "machine_readable_location": "47.18075,8.45984",
+            "frequency": "Yearly",
+            "ticket_price": "65 CHF",
+            "expected_attendees": "46",
+            "dev_comment": "Source for expected_attendees: https://www.mountainbytes.ch/registration 'Who's coming' lists 46 names",
+            "start": "2024-02-16",
+            "end": "2024-02-18"
+        }
+    ],
+    "NordicFuzzCon": [
+        {
+            "link": "https://nordicfuzzcon.org/",
+            "genre": "Furry-Convention",
+            "human_readable_location": "Malmö, Sweden",
+            "machine_readable_location": "55.60767,12.99415",
+            "frequency": "Yearly",
+            "expected_attendees": "2400",
+            "ticket_price": "Sold Out",
+            "start": "2024-02-21",
+            "end": "2024-02-25"
+        }
+    ],
+    "Gdakon": [
+        {
+            "link": "https://gdakon.org/",
+            "genre": "Furry-Convention",
+            "human_readable_location": "Gdańsk, Poland",
+            "machine_readable_location": "54.42876,18.59035",
+            "frequency": "Yearly",
+            "expected_attendees": "460",
+            "ticket_price": "Sold Out",
+            "start": "2024-02-28",
+            "end": "2024-03-03"
+        }
+    ],
+    "Winterkongress": [
+        {
+            "link": "https://winterkongress.ch/",
+            "genre": "Chaos-Event",
+            "human_readable_location": "Winterthur, Switzerland",
+            "machine_readable_location": "47.49975,8.72657",
+            "frequency": "Yearly",
+            "ticket_price": "45 CHF",
+            "start": "2024-03-01",
+            "end": "2024-03-02"
+        }
+    ],
+    "Chemnitzer Linux Tage": [
+        {
+            "link": "https://chemnitzer.linux-tage.de/",
+            "genre": "IT-Event",
+            "human_readable_location": "Chemnitz, Saxony",
+            "machine_readable_location": "50.81353,12.92939",
+            "frequency": "Yearly",
+            "ticket_price": "12 €",
+            "expected_attendees": "4000",
+            "dev_comment": "Source for expected_attendees: https://en.wikipedia.org/wiki/Chemnitz_Linux_Days",
+            "start": "2024-03-16",
+            "end": "2024-03-17"
+        }
+    ],
+    "CloudFest": [
+        {
+            "link": "https://www.cloudfest.com/",
+            "genre": "IT-Event",
+            "human_readable_location": "Rust, Baden-Württemberg",
+            "machine_readable_location": "48.26601,7.72200",
+            "frequency": "Yearly",
+            "expected_attendees": "8000",
+            "ticket_price": "Free with the discount code 'cfvip' (includes Food, Drinks and entry into the Europa-Park)",
+            "start": "2024-03-18",
+            "end": "2024-03-21"
+        }
+    ],
+    "FOSSGIS": [
+        {
+            "link": "https://fossgis-konferenz.de/",
+            "genre": "IT-Event",
+            "human_readable_location": "Hamburg",
+            "machine_readable_location": "53.46335,9.97046",
+            "frequency": "Yearly",
+            "ticket_price": "300 €",
+            "expected_attendees": "600",
+            "dev_comment": "Source for expected_attendees: https://de.wikipedia.org/wiki/FOSSGIS",
+            "start": "2024-03-20",
+            "end": "2024-03-23"
+        }
+    ],
+    "Easterhegg": [
+        {
+            "link": "https://www.easterhegg.eu/",
+            "genre": "Chaos-Event",
+            "human_readable_location": "Regensburg, Bavaria",
+            "machine_readable_location": "49.00236,12.09738",
+            "frequency": "Yearly",
+            "expected_attendees": "400",
+            "dev_comment": "Source for expected_attendees: https://www.easterhegg.eu/ 'Traditionell orientiert sich der EasterHegg von der Teilnehmerzahl immer an den frühen Congressen. Das bedeutet höchstens etwa 400-500 Teilnehmer.'",
+            "start": "2024-03-29",
+            "end": "2024-04-01"
+        }
+    ],
+    "Grazer Linuxtage": [
+        {
+            "link": "https://www.linuxtage.at/de/",
+            "genre": "IT-Event",
+            "human_readable_location": "Graz, Austria",
+            "machine_readable_location": "47.06942,15.45042",
+            "frequency": "Yearly",
+            "expected_attendees": "900",
+            "ticket_price": "No Registration Required",
+            "start": "2024-04-05",
+            "end": "2024-04-06"
+        }
+    ],
+    "Linuxwochen Eisenstadt": [
+        {
+            "link": "https://www.linuxwochen.at/linuxwochen-eisenstadt-summary1",
+            "genre": "IT-Event",
+            "human_readable_location": "Eisenstadt, Austria",
+            "machine_readable_location": "47.82915,16.53504",
+            "frequency": "Yearly",
+            "start": "2024-04-19",
+            "end": "2024-04-20"
+        }
+    ],
+    "Furciety": [
+        {
+            "link": "https://furciety.de/",
+            "genre": "Furry-Convention",
+            "human_readable_location": "Recklinghausen, North Rhine-Westphalia",
+            "machine_readable_location": "51.65779,7.24186",
+            "frequency": "Yearly",
+            "expected_attendees": "120",
+            "dev_comment": "Source for expected_attendees: I mailed them",
+            "start": "2024-04-25",
+            "end": "2024-04-28"
+        }
+    ],
+    "UnFUCK": [
+        {
+            "link": "https://unfuck.eu/",
+            "genre": "Chaos-Event",
+            "human_readable_location": "Furtwangen, Baden-Württemberg",
+            "machine_readable_location": "48.05126,8.20777",
+            "frequency": "Yearly",
+            "dec_comment": "There is a second website: https://www.unfug.hs-furtwangen.de/news/unfuck24",
+            "start": "2024-04-26 (20:00)",
+            "end": "2024-04-28 (afternoon)"
+        }
+    ],
+    "Furry Weekend Holland": [
+        {
+            "link": "https://www.furryweekend.nl/",
+            "genre": "Furry-Convention",
+            "human_readable_location": "Baarlo, Netherlands",
+            "machine_readable_location": "51.34261,6.11197",
+            "frequency": "Yearly",
+            "start": "2024-05-03",
+            "end": "2024-05-06"
+        }
+    ],
+    "Schwarzwaldcon": [
+        {
+            "link": "https://schwarzwaldcon.de/",
+            "genre": "Furry-Convention",
+            "human_readable_location": "Baden-Württemberg",
+            "machine_readable_location": "48.31275,7.90654",
+            "frequency": "Yearly",
+            "ticket_price": "190 € (includes a bed)",
+            "expected_attendees": "69",
+            "dev_comment": "Source for expected_attendees: https://de.wikifur.com/wiki/Schwarzwaldcon",
+            "start": "2024-05-09",
+            "end": "2024-05-12"
+        }
+    ],
+    "MephitMiniCon": [
+        {
+            "link": "https://www.mephitminicon.de/",
+            "genre": "Furry-Convention",
+            "human_readable_location": "Siegen, North Rhine-Westphalia",
+            "machine_readable_location": "50.82669,7.88112",
+            "frequency": "Yearly",
+            "expected_attendees": "200",
+            "ticket_price": "Sold Out",
+            "dev_comment": "Source for expected_attendees: I mailed them.",
+            "dev_comment_2": "Sold out since 2024-01-26.",
+            "start": "2024-05-16",
+            "end": "2024-05-20"
+        }
+    ],
+    "SOCOM": [
+        {
+            "link": "https://www.sachsenfurs.de/de/socom/",
+            "genre": "Tent-Camp",
+            "human_readable_location": "Jena, Thuringia",
+            "machine_readable_location": "51.46193,11.94327",
+            "frequency": "Yearly",
+            "start": "2024-05-23",
+            "end": "2024-05-26"
+        }
+    ],
+    "Electromagnetic Field": [
+        {
+            "link": "https://www.emfcamp.org/",
+            "genre": "Tent-Camp",
+            "human_readable_location": "Eastnor, England",
+            "machine_readable_location": "52.03824,-2.37980",
+            "frequency": "Every 2 years",
+            "expected_attendees": "2500",
+            "dev_comment": "Source for expected_attendees: https://en.wikipedia.org/wiki/Electromagnetic_Field_(festival)",
+            "start": "2024-05-30",
+            "end": "2024-06-02"
+        }
+    ],
+    "GPN": [
+        {
+            "link": "https://entropia.de/GPN",
+            "genre": "Chaos-Event",
+            "human_readable_location": "Karlsruhe, Baden-Württemberg",
+            "machine_readable_location": "49.00113,8.38402",
+            "frequency": "Yearly",
+            "expected_attendees": "2000",
+            "ticket_price": "No Registration Required",
+            "start": "2024-05-30",
+            "end": "2024-06-02"
+        }
+    ],
+    "IGER(ia)": [
+        {
+            "link": "https://fairydust.reisen/",
+            "genre": "Chaos-Event",
+            "human_readable_location": "Bamberg, Bavaria",
+            "machine_readable_location": "49.89601,10.91980",
+            "frequency": "Yearly",
+            "start": "2024-06-07",
+            "end": "2024-06-09"
+        }
+    ],
+    "ZuriHac": [
+        {
+            "link": "https://zfoh.ch/zurihac2024/",
+            "genre": "IT-Event",
+            "human_readable_location": "Zürich, Switzerland",
+            "machine_readable_location": "47.42080,9.36366",
+            "frequency": "Yearly",
+            "ticket_price": "Free",
+            "expected_attendees": "500",
+            "dev_comment": "Source for expected_attendees: https://zfoh.ch/zurihac2020/",
+            "start": "2024-06-08",
+            "end": "2024-06-10"
+        }
+    ],
+    "vvoid camp": [
+        {
+            "link": "https://www.vvoid.camp/",
+            "genre": "Tent-Camp",
+            "human_readable_location": "Bavaria",
+            "machine_readable_location": "48.77301,13.46755",
+            "frequency": "Yearly",
+            "expected_attendees": "150",
+            "ticket_sale_starts": [
+                "2024-03-03",
+                "2024-03-20"
+            ],
+            "dev_comment": "Source for expected_attendees: I mailed them.",
+            "dev_comment_2": "Source for ticket_sale_starts: https://vviki.vvoid.camp/",
+            "start": "2024-06-13",
+            "end": "2024-06-16"
+        }
+    ],
+    "Castlecon": [
+        {
+            "link": "https://castlecon.de/",
+            "genre": "Tent-Camp",
+            "human_readable_location": "Horb, Baden-Württemberg",
+            "machine_readable_location": "48.44572,8.67577",
+            "frequency": "Yearly",
+            "ticket_price": "22 € (includes a place for your tent)",
+            "expected_attendees": "100",
+            "dev_comment": "Source for expected_attendees: https://en.wikifur.com/wiki/CastleCon",
+            "start": "2024-06-14",
+            "end": "2024-06-16"
+        }
+    ],
+    "Bavarian Furdance": [
+        {
+            "link": "https://www.bayern-furs.de/events/bfd",
+            "genre": "Party",
+            "human_readable_location": "Nürnberg, Bavaria",
+            "machine_readable_location": "49.43427,11.04045",
+            "frequency": "2 times per year",
+            "2_start": "2024-11-02",
+            "2_end": "2024-11-02",
+            "ticket_price": "30 €",
+            "expected_attendees": "500",
+            "dev_comment": "Source for expected_attendees: https://www.bayern-furs.de/events/bfd",
+            "dev_comment_2": "todo: 2_start and 2_end is never read",
+            "dev_comment_3": "In the winter the location is different, but also in nürnberg.",
+            "start": "2024-06-15",
+            "end": "2024-06-15"
+        }
+    ],
+    "Tübix": [
+        {
+            "link": "https://www.tuebix.org/",
+            "genre": "IT-Event",
+            "human_readable_location": "Tübingen, Baden-Württemberg",
+            "machine_readable_location": "48.53463,9.07123",
+            "frequency": "Yearly",
+            "ticket_price": "No Registration Required",
+            "start": "2024-06-22",
+            "end": "2024-06-22"
+        }
+    ],
+    "Hack an der Ruhr": [
+        {
+            "link": "https://hadr.un-hack-bar.de/",
+            "genre": "Chaos-Event",
+            "human_readable_location": "Schwerte, North Rhine-Westphalia",
+            "machine_readable_location": "51.46315,7.56777",
+            "frequency": "Yearly",
+            "start": "2024-06-28",
+            "end": "2024-06-30"
+        }
+    ],
+    "CoSin": [
+        {
+            "link": "https://www.cosin.ch/",
+            "genre": "Chaos-Event",
+            "human_readable_location": "Biel, Switzerland",
+            "machine_readable_location": "47.14429,7.24994",
+            "frequency": "Yearly",
+            "ticket_price": "Free",
+            "start": "2024-06-28",
+            "end": "2024-06-30"
+        }
+    ],
+    "Lakesidefurs": [
+        {
+            "link": "https://www.lakesidefurs.at/",
+            "genre": "Furry-Convention",
+            "human_readable_location": "Austria",
+            "machine_readable_location": "47.24459,12.19219",
+            "frequency": "Yearly",
+            "ticket_price": "360 € (includes Hotel and Food)",
+            "expected_attendees": "50",
+            "dev_comment": "Source for expected_attendees: https://www.lakesidefurs.at/location 'Die Herberge bietet Platz für bis zu 51 Teilnehmer'",
+            "start": "2024-06-29",
+            "end": "2024-07-06"
+        }
+    ],
+    "Hacken Open Air": [
+        {
+            "link": "https://hackenopenair.de/",
+            "genre": "Tent-Camp",
+            "human_readable_location": "Gifhorn, Lower Saxony",
+            "machine_readable_location": "52.46286,10.60452",
+            "frequency": "Yearly",
+            "start": "2024-07-09",
+            "end": "2024-07-13"
+        }
+    ],
+    "Südstaaten Furdance": [
+        {
+            "link": "https://s-s-f.de/events/sudstaaten-furdance-vol-7",
+            "genre": "Party",
+            "human_readable_location": "Stuttgart, Baden-Württemberg",
+            "machine_readable_location": "48.72636,9.26270",
+            "frequency": "Yearly",
+            "expected_attendees": "200",
+            "ticket_price": "20 € but sold out",
+            "start": "2024-05-23",
+            "end": "2024-05-23"
+        }
+    ],
+    "Südstaaten Furs C.A.M.P": [
+        {
+            "link": "https://s-s-f.de/events/camp-ii",
+            "genre": "Tent-Camp",
+            "human_readable_location": "Rhineland-Palatinate",
+            "machine_readable_location": "49.66692,6.72111",
+            "frequency": "Yearly",
+            "ticket_price": "50 €",
+            "start": "2024-07-11",
+            "end": "2024-07-14"
+        }
+    ],
+    "BornHack": [
+        {
+            "link": "https://bornhack.dk/",
+            "genre": "Tent-Camp",
+            "human_readable_location": "Funen, Denmark",
+            "machine_readable_location": "55.38709,9.94022",
+            "frequency": "Yearly",
+            "ticket_price": "666 DKK",
+            "start": "2024-07-17",
+            "end": "2024-07-24"
+        }
+    ],
+    "Awoostria": [
+        {
+            "link": "https://awoostria.at/",
+            "genre": "Furry-Convention",
+            "human_readable_location": "Vienna, Austria",
+            "machine_readable_location": "48.20070,16.33830",
+            "frequency": "Yearly",
+            "expected_attendees": "500",
+            "ticket_price": "95 €",
+            "dev_comment": "Source for expected_attendees: https://en.wikifur.com/wiki/Furgether",
+            "start": "2024-07-25",
+            "end": "2024-07-28"
+        }
+    ],
+    "EAST": [
+        {
+            "link": "https://www.sachsenfurs.de/de/east/",
+            "genre": "Furry-Convention",
+            "human_readable_location": "Suhl, Thuringia",
+            "machine_readable_location": "50.61683,10.72303",
+            "frequency": "Yearly",
+            "expected_attendees": "750",
+            "dev_comment": "Source for expected_attendees: https://en.wikifur.com/wiki/List_of_in-person_furry_conventions_by_attendance",
+            "start": "2024-08-14",
+            "end": "2024-08-18"
+        }
+    ],
+    "FrOSCon": [
+        {
+            "link": "https://froscon.org/",
+            "genre": "IT-Event",
+            "human_readable_location": "Sankt Augistin, North Rhine-Westphalia",
+            "machine_readable_location": "50.78056,7.18215",
+            "frequency": "Yearly",
+            "ticket_price": "No Registration Required",
+            "expected_attendees": "1500",
+            "dev_comment": "Source for expected_attendees: https://www.h-brs.de/de/inf/termin/freie-software-und-open-source-auf-der-18-froscon",
+            "start": "2024-08-17",
+            "end": "2024-08-18"
+        }
+    ],
+    "WAMP": [
+        {
+            "link": "https://westwood.camp/",
+            "genre": "Tent-Camp",
+            "human_readable_location": "Westerwald, Rhineland-Palatinate",
+            "machine_readable_location": "50.60369,7.88162",
+            "frequency": "Yearly",
+            "start": "2024-08-22 (12:00)",
+            "end": "2024-08-25 (12:00)"
+        }
+    ],
+    "Håck ma's Castle": [
+        {
+            "link": "https://hack-mas.at/",
+            "genre": "Tent-Camp",
+            "human_readable_location": "Lower Austria",
+            "machine_readable_location": "48.42572,15.21708",
+            "frequency": "Yearly",
+            "expected_attendees": "450",
+            "dev_comment": "Source for expected_attendees: https://hack-ma-s-castle.github.io/37C3_lightningtalk/#5",
+            "start": "2024-08-28",
+            "end": "2024-09-01"
+        }
+    ],
+    "Furgether": [
+        {
+            "link": "https://www.furgether.at/",
+            "genre": "Furry-Convention",
+            "human_readable_location": "Upper Austria",
+            "machine_readable_location": "47.96104,14.43875",
+            "frequency": "Yearly",
+            "expected_attendees": "100",
+            "dev_comment": "Source for expected_attendees: https://en.wikifur.com/wiki/Furgether",
+            "start": "2024-09-13",
+            "end": "2024-09-16"
+        }
+    ],
+    "Eurofurence": [
+        {
+            "link": "https://www.eurofurence.org/",
+            "genre": "Furry-Convention",
+            "human_readable_location": "Hamburg, Germany",
+            "machine_readable_location": "53.56160,9.98601",
+            "frequency": "Yearly",
+            "expected_attendees": "3400",
+            "dev_comment": "Source for expected_attendees: https://en.wikifur.com/wiki/Eurofurence",
+            "start": "2024-09-18",
+            "end": "2024-09-21"
+        }
+    ],
+    "Kieler Open Source und Linux Tage": [
+        {
+            "link": "https://www.kieler-linuxtage.de/",
+            "genre": "IT-Event",
+            "human_readable_location": "Kiel, Schleswig-Holstein",
+            "machine_readable_location": "54.33475,10.11892",
+            "frequency": "Yearly",
+            "ticket_price": "No Registration Required",
+            "start": "2024-09-19",
+            "end": "2024-09-21"
+        }
+    ],
+    "Datenspuren": [
+        {
+            "link": "https://www.datenspuren.de/",
+            "genre": "Chaos-Event",
+            "human_readable_location": "Dresden, Saxony",
+            "machine_readable_location": "51.08155,13.727819",
+            "frequency": "Yearly",
+            "ticket_price": "No Registration Required",
+            "start": "2024-09-20",
+            "end": "2024-09-22"
+        }
+    ],
+    "H-Con": [
+        {
+            "link": "https://h-con.org/",
+            "genre": "Furry-Convention",
+            "human_readable_location": "Odenwald, Hesse",
+            "machine_readable_location": "49.64018,9.04627",
+            "frequency": "Yearly",
+            "expected_attendees": "60",
+            "ticket_price": "140 € (includes Hostel)",
+            "start": "2024-10-01 (14:00)",
+            "end": "2024-10-06 (15:00)"
+        }
+    ],
+    "GoldenLeavesCon": [
+        {
+            "link": "https://glc.furry.ch/",
+            "genre": "Furry-Convention",
+            "human_readable_location": "Canton Bern, Switzerland",
+            "machine_readable_location": "46.73343,8.20718",
+            "frequency": "Yearly",
+            "expected_attendees": "300",
+            "start": "2024-10-23",
+            "end": "2024-10-27"
+        }
+    ],
+    "Flüüfff": [
+        {
+            "link": "https://fluufff.org/",
+            "genre": "Furry-Convention",
+            "human_readable_location": "Brussels, Belgium",
+            "machine_readable_location": "50.84424,4.34738",
+            "frequency": "Yearly",
+            "expected_attendees": "250",
+            "start": "2024-11-06",
+            "end": "2024-11-11"
+        }
+    ],
+    "CCC": [
+        {
+            "link": "https://events.ccc.de/congress/",
+            "genre": "Chaos-Event",
+            "human_readable_location": "Hamburg, Germany",
+            "machine_readable_location": "53.56160,9.98601",
+            "frequency": "Yearly",
+            "ticket_price": "175 €",
+            "expected_attendees": "12000",
+            "dev_comment": "Source for expected_attendees: https://www.hamburg.com/business/16109410/main/ '50 halls with a total capacity of 12,000 visitors'. I'm assuming the CCC sells out.",
+            "start": "2024-12-27",
+            "end": "2024-12-30"
+        }
+    ],
+    "Villinger Suitwalk": [
+        {
+            "link": "https://villinger.furtreff.de/suitwalk.php",
+            "genre": "Furry-Suitwalk",
+            "human_readable_location": "Villingen-Schwenningen, Baden-Württemberg",
+            "machine_readable_location": "48.05547,8.46143",
+            "frequency": "A few times per year",
+            "ticket_price": "Free",
+            "expected_attendees": "12",
+            "start": "2024-04-20",
+            "end": "2024-04-20"
+        }
+    ],
+    "Heilbronner Suitwalk": [
+        {
+            "link": "https://heilbronner-stammtisch.furtreff.de/suitwalk.php",
+            "genre": "Furry-Suitwalk",
+            "human_readable_location": "Heilbronn, Baden-Württemberg",
+            "machine_readable_location": "49.14299,9.21269",
+            "frequency": "A few times per year",
+            "ticket_price": "Free",
+            "expected_attendees": "20",
+            "start": "2024-03-02",
+            "end": "2024-03-02"
+        }
+    ],
+    "Heilbronner Stammtisch": {
+        "link": "https://heilbronner-stammtisch.furtreff.de/stammtisch.php",
+        "genre": "Furry-Stammtisch",
+        "human_readable_location": "Heilbronn, Baden-Württemberg",
+        "machine_readable_location": "49.18695,9.22477",
+        "ticket_price": "Free",
+        "expected_attendees": "20",
+        "date_rule": [
+            "Monthly",
+            "Saturday",
+            "1"
+        ]
+    },
+    "Chaostreff Backnang": {
+        "link": "https://hacknang.de/chaostreff/",
+        "genre": "Chaos-Event",
+        "human_readable_location": "Backnang, Baden-Württemberg",
+        "machine_readable_location": "48.94866,9.42961",
+        "ticket_price": "No Registration Required",
+        "expected_attendees": "20",
+        "date_rule": [
+            "Monthly",
+            "Sunday",
+            "3"
+        ]
+    }
+}

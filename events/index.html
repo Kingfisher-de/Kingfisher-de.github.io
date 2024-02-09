@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+    <title>List of Chaos and Furry Events</title>
+    <meta charset="utf-8">
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+            border-width: 1px;
+            border-style: solid;
+        }
+
+        .no_left_border {
+            border-left: none;
+        }
+
+        .no_right_border {
+            border-right: none;
+        }
+
+        .table_checkbox,
+        .filtercheckbox,
+        #encode_into_url {
+            transform: scale(1.5);
+        }
+
+        .table_checkbox {
+            margin: 0;
+        }
+
+        @media (prefers-color-scheme: light) {
+            html {
+                color: #000000;
+                background-color: #FFFFFF;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            html {
+                color: #FFFFFF;
+                background-color: #000000;
+            }
+
+            a {
+                color: #8080FF;
+            }
+
+            button {
+                border-radius: 4px;
+                color: inherit;
+                background-color: #404040;
+            }
+
+            button:hover {
+                background-color: #707070;
+            }
+        }
+    </style>
+</head>
+
+<script language="javascript" defer>
+    // todo: don't show events that are sold out
+
+    // todo: if I check "Encode filter settings into URL", change something in the url, the box is no longer checked
+
+    function date_ical_format(date) {
+        return date.getUTCFullYear() + String(date.getUTCMonth() + 1).padStart(2, "0") + String(date.getUTCDate()).padStart(2, "0") + "T" + String(date.getHours()).padStart(2, "0") + String(date.getMinutes()).padStart(2, "0") + String(date.getSeconds()).padStart(2, "0")
+    }
+
+    function date_ical_format_morning(date) {
+        return date.getUTCFullYear() + String(date.getUTCMonth() + 1).padStart(2, "0") + String(date.getUTCDate()).padStart(2, "0") + "T090000"
+    }
+
+    function date_ical_format_evening(date) {
+        return date.getUTCFullYear() + String(date.getUTCMonth() + 1).padStart(2, "0") + String(date.getUTCDate()).padStart(2, "0") + "T230000"
+    }
+
+    function event_as_ical(eve) {
+        // todo: input sanitization and escaping
+        return "BEGIN:VEVENT\n" +
+            "SUMMARY:" + eve.name + "\n" +
+            "DTSTART:" + date_ical_format_morning(new Date(eve.start)) + "\n" +
+            "DTEND:" + date_ical_format_evening(new Date(eve.end)) + "\n" +
+            "DTSTAMP:" + date_ical_format(now) + "\n" +
+            "LOCATION:" + eve.human_readable_location + "\n" +
+            "GEO:" + eve.machine_readable_location.replace(",", ";") + "\n" +
+            "URL:" + eve.link + "\n" +
+            "END:VEVENT\n\n"
+    }
+
+    function seconds_to_human_readable(secs) {
+        mins = Math.floor(secs / 60)
+        var numhours = Math.floor(mins / 60);
+        var numminutes = Math.floor(mins % 60);
+        return numhours + ":" + String(numminutes).padStart(2, "0")
+    }
+    var homecoords;
+    var requested_homecoords;
+    function new_known_drive_dist(eve, seconds) {
+        eve.drivetime_secs = seconds;
+        eve.drivetime = seconds_to_human_readable(seconds);
+        redraw();
+    }
+    function async_set_drive_dist(eve) {
+        url = "https://router.project-osrm.org/table/v1/driving/" + homecoords + ";" + eve.machine_readable_location.split(",").reverse().join(",")
+        const permakey = "v1_" + url
+        cachedval = localStorage.getItem(permakey);
+        if (cachedval != null) {
+            new_known_drive_dist(eve, cachedval);
+            thread_like_callback();
+            return;
+        }
+        const request = new Request(url, {
+            method: "GET",
+        });
+        fetch(request)
+            .then((response) => {
+                if (response.status === 200) {
+                    return response.json();
+                } else {
+                    eve.drivetime = "HTTP " + response.status;
+                    throw new Error("Something went wrong on API server!");
+                }
+            })
+            .then((response) => {
+                var seconds = (response.durations[0][1] + response.durations[1][0]) / 2;
+                localStorage.setItem(permakey, seconds);
+                new_known_drive_dist(eve, seconds);
+                thread_like_callback();
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    }
+    function thread_like_callback() {
+        loaded_hc = requested_homecoords
+        if (loaded_hc != homecoords) {
+            homecoords = loaded_hc
+            for (eve of eves) {
+                eve.drivetime_secs = undefined;
+                eve.drivetime = "loading ..."
+            }
+        }
+        if (homecoords !== undefined) {
+            for (eve of eves) {
+                if (is_filtered_out(eve)) {
+                    continue;
+                }
+                if (eve.drivetime_secs !== undefined) {
+                    continue;
+                }
+                if (eve.genre == "Public Holiday") {
+                    continue;
+                }
+                // fill in the the cached values first
+                async_set_drive_dist(eve);
+                return;
+            }
+        }
+        setTimeout(thread_like_callback, 100);
+    }
+    var columns = { // todo: are js-dicts guaranteed to be ordered
+        "select_checkbox": '<button onclick="ical_download()">download selected for calendar import</button><button onclick="toggle_select_all()">(un-)select all</button>',
+        "name": "Event Name",
+        "start": "Begin",
+        "end": "End",
+        "daynum": "Number of Days",
+        "expected_attendees": "Expected Number of Attendees",
+        "frequency": "Frequency",
+        "human_readable_location": "Location",
+        "drivetime": "Travel Time (car)",
+        "ticket_price": "Ticket Price",
+    };
+    function toggle_select_all() {
+        var count_checked = 0;
+        var count_unchecked = 0;
+        for (eve of eves) {
+            if (is_filtered_out(eve)) {
+                continue;
+            }
+            if (eve.genre == "Public Holiday") {
+                continue;
+            }
+            if (eve.selected) {
+                count_checked += 1;
+            } else {
+                count_unchecked += 1;
+            }
+        }
+        var newstate = count_unchecked >= count_checked;
+        for (eve of eves) {
+            if (is_filtered_out(eve)) {
+                continue;
+            }
+            if (eve.genre == "Public Holiday") {
+                continue;
+            }
+            eve.selected = newstate;
+            document.getElementById("select_event_" + eve.arnum).checked = newstate;
+        }
+    }
+    const textEncoder = new TextEncoder();
+    function ical_download() {
+        total = "BEGIN:VCALENDAR\nVERSION:2.0\n\n"
+        for (eve of eves) {
+            if (is_filtered_out(eve)) {
+                continue;
+            }
+            if (eve.genre == "Public Holiday") {
+                continue;
+            }
+            if (eve.selected) {
+                total += event_as_ical(eve);
+            }
+        }
+        total += "END:VCALENDAR\n"
+        const download_anchor = document.createElement('a');
+        download_anchor.download = "kf_events.ics";
+        download_anchor.href = "data:text/octet-stream," + encodeURIComponent(total);
+        download_anchor.click();
+    }
+    function get_max_car_time() {
+        max_car_time = document.getElementById("max_car_time").value.replace(",", ".");
+        var secs = null;
+        parseFloat(max_car_time) * 3600;
+        if ((m = max_car_time.match(/^(\d*)\.?(\d*)$/)) !== null) {
+            secs = 3600 * parseFloat(max_car_time);
+        }
+        if ((m = max_car_time.match(/^(\d*):(\d\d)$/)) !== null) {
+            secs = m[1] * 3600 + m[2] * 60;
+        }
+        return secs;
+    }
+    function is_filtered_out(eve) {
+        if (eve.frequency == "Yearly" && !document.getElementById("yearly").checked) {
+            return true;
+        }
+        if (eve.frequency == "Monthly" && !document.getElementById("monthly").checked) {
+            return true;
+        }
+        if (!document.getElementById(eve.genre).checked) {
+            return true;
+        }
+        if (eve.expected_attendees == null && !document.getElementById("unknown_size").checked) {
+            return true;
+        }
+        if (parseInt(eve.expected_attendees) < parseInt(document.getElementById("min_attendees").value)) {
+            return true;
+        }
+        {
+            secs = get_max_car_time()
+            if (secs !== null && eve.drivetime_secs > secs) {
+                return true;
+            }
+        }
+        if (yesterday > new Date(eve.end)) {
+            return true;
+        }
+        return false;
+    }
+    function parsedate(str) {
+        return new Date(str.split(" ")[0] + "Z");
+    }
+    function redraw() {
+
+        var newtbody = document.createElement("tbody");
+        newtbody.id = "swappy";
+        for (eve of eves) {
+            // todo: show an "no events" message if every event gets filtered out
+            if (is_filtered_out(eve)) {
+                continue;
+            }
+            row = newtbody.insertRow()
+            if (eve.genre === "Public Holiday") {
+                col_after_enddate = false;
+                col_counter = 0;
+                for (column of Object.keys(columns)) {
+                    col_counter += 1;
+                    cell = row.insertCell()
+                    if (["start", "end"].includes(column)) {
+                        cell.style = "white-space: nowrap";
+                    }
+                    if (["expected_attendees", "daynum", "drivetime", "start", "end"].includes(column)) {
+                        cell.align = "right"
+                    }
+                    if (["start", "end"].includes(column)) {
+                        date = parsedate(eve[column])
+                        txt = date.toLocaleDateString(undefined, { weekday: "short", }) + " " + String(date.getUTCDate()).padStart(2, "0") + "." + String(date.getUTCMonth() + 1).padStart(2, "0");
+                        if (eve.start == eve.end) {
+                            if (column == "start") {
+                                cell.className = "no_right_border";
+                                cell.appendChild(document.createTextNode(txt));
+                            } else if (column == "end") {
+                                cell.className = "no_left_border";
+                            }
+                        } else {
+                            cell.appendChild(document.createTextNode(txt));
+                        }
+                    }
+                    if (col_after_enddate) {
+                        col_after_enddate = false;
+                        cell.appendChild(document.createTextNode(eve.holidaynote));
+                        cell.colSpan = Object.keys(columns).length - col_counter + 1;
+                        cell.align = "left";
+                        break;
+                    }
+                    if (column === "end") {
+                        col_after_enddate = true;
+                    }
+                }
+            } else {
+                for (column of Object.keys(columns)) {
+                    cell = row.insertCell()
+                    if (["start", "end"].includes(column)) {
+                        cell.style = "white-space: nowrap";
+                    }
+                    if (["expected_attendees", "daynum", "drivetime", "start", "end"].includes(column)) {
+                        cell.align = "right"
+                    }
+                    if (column == "select_checkbox") {
+                        cell.align = "center";
+                    }
+                    if (column == "daynum") {
+                        daynum = 1 + Math.round((parsedate(eve.end) - parsedate(eve.start)) / 1000 / 60 / 60 / 24);
+                        cell.appendChild(document.createTextNode(daynum));
+                    } else if (["start", "end"].includes(column)) {
+                        date = parsedate(eve[column])
+                        txt = date.toLocaleDateString(undefined, { weekday: "short", }) + " " + String(date.getUTCDate()).padStart(2, "0") + "." + String(date.getUTCMonth() + 1).padStart(2, "0");
+                        if (eve.start == eve.end) {
+                            if (column == "start") {
+                                cell.className = "no_right_border";
+                                cell.appendChild(document.createTextNode(txt));
+                            } else if (column == "end") {
+                                cell.className = "no_left_border";
+                            }
+                        } else {
+                            cell.appendChild(document.createTextNode(txt));
+                        }
+                    } else if (column == "select_checkbox") {
+                        checkbox = document.createElement("input");
+                        checkbox.type = "checkbox";
+                        checkbox.id = "select_event_" + eve.arnum;
+                        checkbox.checked = eve.selected;
+                        checkbox.className = "table_checkbox";
+                        checkbox.setAttribute("onchange", `console.log('onchange'); this.checked = eves[${eve.arnum}].selected;`)
+                        cell.appendChild(checkbox);
+                        cell.setAttribute("onclick", `console.log('onclick'); cb = document.getElementById("select_event_${eve.arnum}"); cb.checked = !eves[${eve.arnum}].selected; eves[${eve.arnum}].selected = cb.checked; `);
+                    } else if (column in eve) {
+                        if (column == "name" && "link" in eve) {
+                            var a = document.createElement('a');
+                            var linkText = document.createTextNode(eve[column]);
+                            a.appendChild(linkText);
+                            a.href = eve.link;
+                            cell.appendChild(a)
+                        } else {
+                            cell.appendChild(document.createTextNode(eve[column]))
+                        }
+                    }
+                }
+            }
+        }
+        var oldtbody = document.getElementById("swappy");
+        oldtbody.replaceWith(newtbody);
+
+        if (document.getElementById("encode_into_url").checked) {
+            encode_into_url();
+        } else {
+            window.history.replaceState(null, "", "/events/");
+        }
+    }
+    function key_handler(ele) {
+        if (event.key !== 'Enter') {
+            return;
+        }
+        if (ele.id == "hometown_name") {
+            const request = new Request("https://nominatim.openstreetmap.org/search?q=" + encodeURIComponent(ele.value) + "&format=json&polygon=0&addressdetails=0", {
+                method: "GET",
+            });
+            fetch(request)
+                .then((response) => {
+                    if (response.status === 200) {
+                        return response.json();
+                    } else {
+                        throw new Error("Something went wrong on API server!");
+                    }
+                })
+                .then((response) => {
+                    response = response[0]
+                    var newdiv = document.createElement("div");
+                    newdiv.id = "CityName";
+                    newdiv.appendChild(document.createTextNode("Assuming you meant: " + response.display_name));
+                    var olddiv = document.getElementById("CityName");
+                    olddiv.replaceWith(newdiv);
+                    requested_homecoords = response.lon + "," + response.lat;
+                    localStorage.setItem("v1_homecoords", requested_homecoords);
+                })
+                .catch((error) => {
+                    console.error(error);
+                });
+        } else if (ele.id == "max_car_time") {
+            if (get_max_car_time() === null) {
+                userval = document.getElementById("max_car_time").value
+                alert(`'${userval}' is not a valid time. E.g. 2:53 is.`);
+            }
+        } else {
+            console.error();
+        }
+    }
+    var checkboxes;
+    function load_from_url() {
+        const urlParams = new URLSearchParams(window.location.search);
+        for (checkbox of checkboxes) {
+            if (urlParams.get(checkbox.id) === "true") {
+                checkbox.checked = true;
+            } else if (urlParams.get(checkbox.id) === "false") {
+                checkbox.checked = false;
+            }
+        }
+        for (textid of ["min_attendees"]) {
+            if (urlParams.get(textid) != null) {
+                document.getElementById(textid).value = decodeURIComponent(urlParams.get(textid))
+            };
+        }
+    }
+    function encode_into_url() {
+        newurl = "/events/?"
+        for (textid of ["min_attendees"]) {
+            newurl += textid + "=" + encodeURIComponent(document.getElementById(textid).value) + "&"
+        }
+        for (checkbox of checkboxes) {
+            newurl += checkbox.id + "=" + checkbox.checked + "&"
+        }
+        newurl = newurl.slice(0, -1);
+        window.history.replaceState(null, "", newurl);
+    }
+    function allInit() {
+        checkboxes = document.getElementsByClassName("filtercheckbox");
+
+        load_from_url();
+
+        mainthead = document.getElementById("mainthead");
+        for ([key, human_readable] of Object.entries(columns)) {
+            col = document.createElement("th")
+            col.innerHTML = human_readable
+            mainthead.appendChild(col)
+        }
+        for (eve of eves) {
+            eve.drivetime = "Enter hometown name at the top";
+            eve.selected = false;
+        }
+        requested_homecoords = localStorage.getItem("v1_homecoords");
+        thread_like_callback();
+
+        document.getElementById("encode_into_url").addEventListener("change", () => {
+            redraw();
+        });
+        for (checkbox of checkboxes) {
+            checkbox.addEventListener("change", () => {
+                redraw();
+            });
+        }
+        redraw();
+    }
+
+    const now = new Date();
+    const yesterday = now;
+    yesterday.setUTCDate(yesterday.getUTCDate() - 1);
+
+    var eves;
+    var holis_raw;
+    var german_states;
+
+    fetch("https://openholidaysapi.org/Subdivisions?countryIsoCode=DE")
+        .then(res => res.json())
+        .then(res => { german_states = res; statesloaded(); })
+
+    function statesloaded() {
+        fetch(`https://openholidaysapi.org/PublicHolidays?countryIsoCode=DE&languageIsoCode=EN&validFrom=${now.getUTCFullYear()}-${now.getUTCMonth() + 1}-${now.getUTCDate()}&validTo=${now.getUTCFullYear() + 1}-${now.getUTCMonth() + 1}-${now.getUTCDate()}`)
+            .then(res => res.json())
+            .then(holis => holidaysloaded(holis));
+    }
+
+    function holidaysloaded(holis) {
+        holis_raw = holis;
+        fetch("events.json")
+            .then(res => res.json())
+            .then(raw => { jsonloaded(raw); })
+            .await;
+    }
+
+    function jsonloaded(raw) {
+        eves = []
+        for ([name, ar] of Object.entries(raw)) {
+            if (Object.prototype.toString.call(ar) === '[object Array]') {
+                last = {}
+                for (el of ar) {
+                    console.assert("start" in el);
+                    console.assert("end" in el);
+                    for ([k, v] of Object.entries(last)) {
+                        if (!(k in el)) {
+                            el[k] = last[k];
+                        }
+                    }
+                    last = el;
+                    el.name = name;
+                    // todo: The same console.asserts should be done in spawn_event
+                    console.assert("genre" in el);
+                    console.assert("frequency" in el);
+                    console.assert("human_readable_location" in el);
+                    console.assert("machine_readable_location" in el);
+                    eves.push(el);
+                }
+            } else {
+                function spawn_event(date) {
+                    eve = { "name": name }
+                    for ([k, v] of Object.entries(ar)) {
+                        eve[k] = ar[k];
+                    }
+                    eve.start = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+                    eve.end = eve.start;
+                    eves.push(eve);
+                }
+                ar.frequency = ar.date_rule[0];
+                if (ar.date_rule[0] == "Monthly") {
+                    weekdays = {
+                        "Monday": 1,
+                        "Tuesday": 2,
+                        "Wednesday": 3,
+                        "Thursday": 4,
+                        "Friday": 5,
+                        "Saturday": 6,
+                        "Sunday": 0,
+                    };
+                    wd = weekdays[ar.date_rule[1]];
+
+                    var walker = new Date();
+                    for (var i = 0; i < 12; i++) {
+                        walker.setUTCMonth(now.getUTCMonth() + i);
+                        walker.setUTCDate(1);
+                        offset = wd - walker.getUTCDay();
+                        if (offset < 0) {
+                            offset += 7;
+                        }
+                        walker.setUTCDate(walker.getUTCDate() + offset + (ar.date_rule[2] - 1) * 7);
+                        spawn_event(walker);
+                    }
+                } else {
+                    throw new Error("Unknown date_rule");
+                }
+            }
+        }
+        for (hol of holis_raw) {
+            console.assert(hol.startDate == hol.endDate);
+            weekday = (new Date(hol.startDate)).getUTCDay();
+            if ([0, 6].includes(weekday)) {
+                continue; // Ignore public holidays that are on weekends, as most people don't work on weekends anyway.
+            }
+            // thedaybefore = new Date(hol.endDate)
+            // thedaybefore.setUTCDate(thedaybefore.getUTCDate() - 1)
+            // if (thedaybefore - new Date(eves[eves.length - 1].end) == 0) {
+            //     eves[eves.length - 1].end = hol.endDate
+            eve = { "start": hol.startDate, "end": hol.endDate, "genre": "Public Holiday" }
+            if (hol.nationwide) {
+                eve.holidaynote = "Public holiday in all of Germany";
+            } else {
+                eve.holidaynote = "Public holiday in the following German states: ";
+                for (state of hol.subdivisions) {
+                    var longname;
+                    for (st of german_states) {
+                        if (st.shortName == state.shortName) {
+                            longname = st.name[1].text;
+                        }
+                    }
+                    eve.holidaynote += longname + " ";
+                }
+            }
+            eves.push(eve)
+        }
+        eves.sort(function (a, b) {
+            var av = new Date(a.start),
+                bv = new Date(b.start);
+            if (av < bv) return -1;
+            if (av > bv) return 1;
+            var av = new Date(a.end),
+                bv = new Date(b.end);
+            if (av < bv) return -1;
+            if (av > bv) return 1;
+            return 0;
+        });
+        var count = 0;
+        for (eve of eves) {
+            eve.arnum = count;
+            count += 1;
+        }
+        // Stolen from: https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
+        if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", allInit);
+        } else {
+            allInit();
+        }
+    }
+</script>
+
+<body>
+    <div style="text-align:center;">
+        <div style="display:inline-block; text-align: left;">
+            <h1>List of Chaos and Furry Events</h1>
+            <div>
+                <label for="hometown_name"></label>
+                Enter the name of your hometown to enable travel time calcuation. (Will be send to
+                <a href="https://nominatim.openstreetmap.org">nominatim.openstreetmap.org</a> and
+                <a href="https://router.project-osrm.org">router.project-osrm.org</a>. A
+                history will be stored in local storage.)
+                <br>
+                <input type="search" id="hometown_name" placeholder="Your hometown name"
+                    onkeydown="key_handler(this)" />
+                <br>
+                <div id="CityName">&nbsp;</div>
+            </div>
+            <br>
+            <div style="display:flex;">
+                <fieldset>
+                    <legend>Filter Genre</legend>
+                    <div>
+                        <input class="filtercheckbox" type="checkbox" id="Chaos-Event" checked />
+                        <label for="Chaos-Event">Chaos-Event</label>
+                    </div>
+                    <div>
+                        <input class="filtercheckbox" type="checkbox" id="IT-Event" checked />
+                        <label for="IT-Event">IT-Event</label>
+                    </div>
+                    <div>
+                        <input class="filtercheckbox" type="checkbox" id="Furry-Convention" checked />
+                        <label for="Furry-Convention">Furry-Convention</label>
+                    </div>
+                    <div>
+                        <input class="filtercheckbox" type="checkbox" id="Furry-Suitwalk" checked />
+                        <label for="Furry-Suitwalk">Furry-Suitwalk</label>
+                    </div>
+                    <div>
+                        <input class="filtercheckbox" type="checkbox" id="Furry-Stammtisch" checked />
+                        <label for="Furry-Stammtisch">Furry-Stammtisch</label>
+                    </div>
+                    <div>
+                        <input class="filtercheckbox" type="checkbox" id="Tent-Camp" checked />
+                        <label for="Tent-Camp">Tent-Camp</label>
+                    </div>
+                    <div>
+                        <input class="filtercheckbox" type="checkbox" id="Party" checked />
+                        <label for="Party">Party</label>
+                    </div>
+                    <div>
+                        <input class="filtercheckbox" type="checkbox" id="Public Holiday" checked />
+                        <label for="Public Holiday">Public Holiday</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Filter Distance</legend>
+                    <div>Exclude all events that are more than <input type="text" size="5" id="max_car_time"
+                            onkeyup="redraw(); key_handler(this);" placeholder="h:mm" /> hours away with a car.
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Filter Frequency</legend>
+                    <!-- todo: what about other frequencies than those: -->
+                    <div>
+                        <input class="filtercheckbox" type="checkbox" id="yearly" checked />
+                        <label for="yearly">Yearly</label>
+                    </div>
+                    <div>
+                        <input class="filtercheckbox" type="checkbox" id="monthly" checked />
+                        <label for="monthly">Monthly</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Filter Size</legend>
+                    <div>Exclude all events with less than <input type="text" size="5" id="min_attendees"
+                            onkeyup="redraw()" />
+                        expected
+                        attendees.
+                    </div>
+                    <div>
+                        <input class="filtercheckbox" type="checkbox" id="unknown_size" checked />
+                        <label for="unknown_size">Include events of unknown size</label>
+                    </div>
+                </fieldset>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" id="encode_into_url" unchecked />
+                <label for="encode_into_url">Encode filter settings into URL (hometown and distance filter will not be
+                    included)</label>
+            </div>
+        </div>
+    </div>
+    <br>
+    <table style="margin: auto;">
+        <thead id="mainthead"></thead>
+        <tbody id="swappy">
+            <td>Loading ... (Javascript and network is required) </td>
+        </tbody>
+    </table>
+    <div style="width: 50em; margin: auto;">
+        <h2> How to Contribute </h2>
+        <p>
+            If you want to add an event to this site, fill in missing information or correct wrong information, send
+            it
+            to
+            <a href="https://t.me/Kingfisher_de">@Kingfisher_de on Telegram</a>, preferably in the same format as <a
+                href="events.json">this site's data</a>.
+        </p>
+        <p>
+            The source code can be found <a href="todo">here</a>, PR's welcome. (It's my first time doing
+            Javascript,
+            code
+            quality is accordingly. But the html and css is how I want it.).
+        </p>
+    </div>
+</body>
+
+</html>
