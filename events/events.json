@@ -354,7 +354,7 @@
     "Bavarian Furdance": [
         {
             "link": "https://www.bayern-furs.de/events/bfd",
-            "genre": "Party",
+            "genre": "Furdance",
             "human_readable_location": "Nürnberg, Bavaria",
             "machine_readable_location": "49.43427,11.04045",
             "frequency": "2 times per year",
@@ -432,7 +432,7 @@
     "Südstaaten Furdance": [
         {
             "link": "https://s-s-f.de/events/sudstaaten-furdance-vol-7",
-            "genre": "Party",
+            "genre": "Furdance",
             "human_readable_location": "Stuttgart, Baden-Württemberg",
             "machine_readable_location": "48.72636,9.26270",
             "frequency": "Yearly",
@@ -658,7 +658,7 @@
             "end": "2024-03-02"
         }
     ],
-    "Heilbronner Stammtisch": {
+    "Heilbronner Furry-Stammtisch": {
         "link": "https://heilbronner-stammtisch.furtreff.de/stammtisch.php",
         "genre": "Furry-Stammtisch",
         "human_readable_location": "Heilbronn, Baden-Württemberg",
@@ -683,5 +683,139 @@
             "Sunday",
             "3"
         ]
+    },
+    "Karlsruher Suitwalk": [
+        {
+            "link": "https://karlsfurs.de/",
+            "genre": "Furry-Suitwalk",
+            "human_readable_location": "Karlsruhe, Baden-Württemberg",
+            "machine_readable_location": "49.01116,8.39786",
+            "frequency": "A few times per year",
+            "ticket_price": "Free",
+            "expected_attendees": "150",
+            "start": "2024-02-10",
+            "end": "2024-02-10"
+        }
+    ],
+    "Fursuitwalk Speyer": [
+        {
+            "link": "https://weinbergfurs.de/suitwalks/speyer",
+            "genre": "Furry-Suitwalk",
+            "human_readable_location": "Speyer, Rhineland-Palatinate",
+            "machine_readable_location": "49.31485,8.44711",
+            "frequency": "A few times per year",
+            "ticket_price": "Free",
+            "expected_attendees": "20",
+            "start": "2024-03-23",
+            "end": "2024-03-23"
+        }
+    ],
+    "Fursuitwalk Bad Dürkheim": [
+        {
+            "link": "https://weinbergfurs.de/suitwalks/bad-duerkheim",
+            "genre": "Furry-Suitwalk",
+            "human_readable_location": "Bad Dürkheim, Rhineland-Palatinate",
+            "machine_readable_location": "49.45980,8.16553",
+            "frequency": "A few times per year",
+            "ticket_price": "Free",
+            "expected_attendees": "20",
+            "start": "2024-02-25",
+            "end": "2024-02-25"
+        }
+    ],
+    "Fursuitwalk Weinheim": [
+        {
+            "link": "https://weinbergfurs.de/suitwalks/weinheim",
+            "genre": "Furry-Suitwalk",
+            "human_readable_location": "Weinheim, Baden-Württemberg",
+            "machine_readable_location": "49.55029,8.67292",
+            "frequency": "A few times per year",
+            "ticket_price": "Free",
+            "expected_attendees": "20",
+            "start": "2024-03-30",
+            "end": "2024-03-30"
+        }
+    ],
+    "Sachsen Furdance": [
+        {
+            "link": "https://www.sachsenfurs.de/de/sfd/",
+            "genre": "Furdance",
+            "human_readable_location": "Dresden, Saxony",
+            "machine_readable_location": "51.07007,13.73168",
+            "frequency": "Yearly",
+            "start": "2024-06-29 19:00",
+            "end": "2024-06-29 (3:00 am tag dannach)"
+        }
+    ],
+    "Rheinfurdance": [
+        {
+            "link": "https://reg.rheinfurs.de/event/2-RheinFurDance",
+            "genre": "Furdance",
+            "human_readable_location": "Gernsheim, Hesse",
+            "machine_readable_location": "49.75116,8.48810",
+            "frequency": "Yearly",
+            "start": "2024-05-11 18:00",
+            "end": "2024-05-11 (4:00 am tag dannach)"
+        }
+    ],
+    "Comic Con Stuttgart": [
+        {
+            "link": "https://www.comiccon.de/",
+            "genre": "Misc.",
+            "human_readable_location": "Stuttgart, Baden-Württemberg",
+            "machine_readable_location": "48.69368,9.19264",
+            "frequency": "Yearly",
+            "start": "2024-11-30",
+            "end": "2024-12-01",
+            "expected_attendees": "48000"
+        }
+    ],
+    "TwoDance Afterdark": [
+        {
+            "link": "https://two-dance.de/",
+            "genre": "Furdance",
+            "human_readable_location": "Hamm, North Rhine-Westphalia",
+            "machine_readable_location": "51.69269,7.92908",
+            "frequency": "Yearly",
+            "start": "2024-04-05 18:00",
+            "end": "2024-04-05 (2:00 next morning)"
+        }
+    ],
+    "TwoDance Furdance": [
+        {
+            "link": "https://two-dance.de/",
+            "genre": "Furdance",
+            "human_readable_location": "Hamm, North Rhine-Westphalia",
+            "machine_readable_location": "51.69269,7.92908",
+            "frequency": "Yearly",
+            "start": "2024-04-06 18:00",
+            "end": "2024-04-06 (2:00 next morning)"
+        }
+    ],
+    "FurryTram Frankfurt": [
+        {
+            "link": "https://furrytram-ffm.de/",
+            "genre": "Furdance",
+            "human_readable_location": "Frankfurt, Hesse",
+            "machine_readable_location": "50.10714,8.66378",
+            "frequency": "Yearly",
+            "start": "2024-04-13 19:00",
+            "end": "2024-04-13 22:30",
+            "ticket_price": "64 €",
+            "expected_attendees": "50"
+        }
+    ],
+    "Stuttgarter Furry-Stammtisch": {
+        "link": "https://t.me/FurryStammtisch/1",
+        "genre": "Furry-Stammtisch",
+        "human_readable_location": "Stuttgart, Baden-Württemberg",
+        "machine_readable_location": "48.82150,9.20581",
+        "date_rule": [
+            "Monthly",
+            "Saturday",
+            "2"
+        ],
+        "ticket_price": "1 €",
+        "expected_attendees": "25"
     }
 }
