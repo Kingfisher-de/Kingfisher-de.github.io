@@ -98,8 +98,8 @@
         // todo: input sanitization and escaping
         return "BEGIN:VEVENT\n" +
             "SUMMARY:" + eve.name + "\n" +
-            "DTSTART:" + date_ical_format_morning(new Date(eve.start)) + "\n" +
-            "DTEND:" + date_ical_format_evening(new Date(eve.end)) + "\n" +
+            "DTSTART:" + date_ical_format_morning(parsedate(eve.start)) + "\n" +
+            "DTEND:" + date_ical_format_evening(parsedate(eve.end)) + "\n" +
             "DTSTAMP:" + date_ical_format(now) + "\n" +
             "LOCATION:" + eve.human_readable_location + "\n" +
             "GEO:" + eve.machine_readable_location.replace(",", ";") + "\n" +
@@ -272,7 +272,7 @@
                 return true;
             }
         }
-        if (yesterday > new Date(eve.end)) {
+        if (yesterday > parsedate(eve.end)) {
             return true;
         }
         return false;
@@ -572,13 +572,13 @@
         }
         for (hol of holis_raw) {
             console.assert(hol.startDate == hol.endDate);
-            weekday = (new Date(hol.startDate)).getUTCDay();
+            weekday = (parsedate(hol.startDate)).getUTCDay();
             if ([0, 6].includes(weekday)) {
                 continue; // Ignore public holidays that are on weekends, as most people don't work on weekends anyway.
             }
-            // thedaybefore = new Date(hol.endDate)
+            // thedaybefore = parsedate(hol.endDate)
             // thedaybefore.setUTCDate(thedaybefore.getUTCDate() - 1)
-            // if (thedaybefore - new Date(eves[eves.length - 1].end) == 0) {
+            // if (thedaybefore - parsedate(eves[eves.length - 1].end) == 0) {
             //     eves[eves.length - 1].end = hol.endDate
             eve = { "start": hol.startDate, "end": hol.endDate, "genre": "Public Holiday" }
             if (hol.nationwide) {
@@ -599,12 +599,12 @@
             eves.push(eve)
         }
         eves.sort(function (a, b) {
-            var av = new Date(a.start),
-                bv = new Date(b.start);
+            var av = parsedate(a.start),
+                bv = parsedate(b.start);
             if (av < bv) return -1;
             if (av > bv) return 1;
-            var av = new Date(a.end),
-                bv = new Date(b.end);
+            var av = parsedate(a.end),
+                bv = parsedate(b.end);
             if (av < bv) return -1;
             if (av > bv) return 1;
             return 0;
