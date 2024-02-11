@@ -278,7 +278,8 @@
         return false;
     }
     function parsedate(str) {
-        return new Date(str.split(" ")[0] + "Z");
+        // Safari does not support "yyyy-MM-dd", only "yyyy/MM/dd"
+        return new Date(str.split(" ")[0].replace("-", "/") + " Z");
     }
     function redraw() {
 
@@ -583,7 +584,7 @@
             if (hol.nationwide) {
                 eve.holidaynote = "Public holiday in all of Germany";
             } else {
-                eve.holidaynote = "Public holiday in the following German states: ";
+                states = []
                 for (state of hol.subdivisions) {
                     var longname;
                     for (st of german_states) {
@@ -591,8 +592,9 @@
                             longname = st.name[1].text;
                         }
                     }
-                    eve.holidaynote += longname + " ";
+                    states.push(longname);
                 }
+                eve.holidaynote = "Public holiday in the following German states: " + states.join(", ");
             }
             eves.push(eve)
         }
