@@ -279,7 +279,7 @@
     }
     function parsedate(str) {
         // Safari does not support "yyyy-MM-dd", only "yyyy/MM/dd"
-        return new Date(str.split(" ")[0].replace("-", "/") + " Z");
+        return new Date(str.split(" ")[0] + "T13:00Z");
     }
     function redraw() {
 

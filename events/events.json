@@ -817,5 +817,17 @@
         ],
         "ticket_price": "1 €",
         "expected_attendees": "25"
+    },
+    "Zig-Space": {
+        "link": "https://gerlingen.digital/index.php?r=space%2Fspace&cguid=ac4a8f3c-d0b6-45dd-9bb9-f03936f131e2",
+        "genre": "Chaos-Event",
+        "human_readable_location": "Gerlingen, Baden-Württemberg",
+        "machine_readable_location": "48.79769,9.06332",
+        "date_rule": [
+            "Monthly",
+            "Friday",
+            "4"
+        ],
+        "ticket_price": "No Registration Required"
     }
 }
