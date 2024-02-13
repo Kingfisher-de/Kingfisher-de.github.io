@@ -380,7 +380,9 @@
             "frequency": "Yearly",
             "ticket_price": "No Registration Required",
             "start": "2024-06-22",
-            "end": "2024-06-22"
+            "end": "2024-06-22",
+            "expected_attendees": "250",
+            "dev_comment": "Source for expected_attendees: I mailed them"
         }
     ],
     "Hack an der Ruhr": [
