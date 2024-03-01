@@ -837,5 +837,31 @@
             "4"
         ],
         "ticket_price": "No Registration Required"
-    }
+    },
+    "Rheinfurs Suitwalk": [
+        {
+            "link": "https://reg.rheinfurs.de/meetup/5-RheinFurs-Suitwalk-kurpark-wiesbaden",
+            "genre": "Furry-Suitwalk",
+            "human_readable_location": "Wiesbaden, Hesse",
+            "machine_readable_location": "50.08325,8.24795",
+            "start": "2024-04-27",
+            "end": "2024-04-27",
+            "frequency": "Irregular",
+            "ticket_price": "Free",
+            "expected_attendees": "100"
+        }
+    ],
+    "Rheinfurs Stammtisch": [
+        {
+            "link": "https://reg.rheinfurs.de/meetup/2-rheinfurs-stammtisch",
+            "genre": "Furry-Stammtisch",
+            "human_readable_location": "Wiesbaden, Hesse",
+            "machine_readable_location": "50.07502,8.25294",
+            "start": "2024-03-09",
+            "end": "2024-03-09",
+            "frequency": "Irregular",
+            "ticket_price": "Free",
+            "expected_attendees": "15"
+        }
+    ]
 }

@@ -483,8 +483,10 @@
     }
 
     const now = new Date();
-    const yesterday = now;
+    const yesterday = new Date(now);
     yesterday.setUTCDate(yesterday.getUTCDate() - 1);
+    const nextyear = new Date(now);
+    nextyear.setUTCDate(nextyear.getUTCDate() + 365); // To make sure that 2024-02-29 becomes 2025-03-01 instead of 2025-02-29, which would make openholidaysapi.org complain that it does not exist.
 
     var eves;
     var holis_raw;
@@ -495,7 +497,7 @@
         .then(res => { german_states = res; statesloaded(); })
 
     function statesloaded() {
-        fetch(`https://openholidaysapi.org/PublicHolidays?countryIsoCode=DE&languageIsoCode=EN&validFrom=${now.getUTCFullYear()}-${now.getUTCMonth() + 1}-${now.getUTCDate()}&validTo=${now.getUTCFullYear() + 1}-${now.getUTCMonth() + 1}-${now.getUTCDate()}`)
+        fetch(`https://openholidaysapi.org/PublicHolidays?countryIsoCode=DE&languageIsoCode=EN&validFrom=${now.getUTCFullYear()}-${now.getUTCMonth() + 1}-${now.getUTCDate()}&validTo=${nextyear.getUTCFullYear()}-${nextyear.getUTCMonth() + 1}-${nextyear.getUTCDate()}`)
             .then(res => res.json())
             .then(holis => holidaysloaded(holis));
     }
