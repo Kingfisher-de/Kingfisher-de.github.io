@@ -651,7 +651,7 @@
     ],
     "Heilbronner Suitwalk": [
         {
-            "link": "https://heilbronner-stammtisch.furtreff.de/suitwalk.php",
+            "link": "https://weinbergfurs.de/suitwalks/heilbronn",
             "genre": "Furry-Suitwalk",
             "human_readable_location": "Heilbronn, Baden-Württemberg",
             "machine_readable_location": "49.14299,9.21269",
@@ -660,10 +660,14 @@
             "expected_attendees": "20",
             "start": "2024-03-02",
             "end": "2024-03-02"
+        },
+        {
+            "start": "2024-05-04",
+            "end": "2024-05-04"
         }
     ],
     "Heilbronner Furry-Stammtisch": {
-        "link": "https://heilbronner-stammtisch.furtreff.de/stammtisch.php",
+        "link": "https://weinbergfurs.de/suitwalks/heilbronn",
         "genre": "Furry-Stammtisch",
         "human_readable_location": "Heilbronn, Baden-Württemberg",
         "machine_readable_location": "49.18695,9.22477",
@@ -862,6 +866,30 @@
             "frequency": "Irregular",
             "ticket_price": "Free",
             "expected_attendees": "15"
+        }
+    ],
+    "Weinbergfurdance": [
+        {
+            "link": "https://weinbergfurs.de/suitwalks/weinbergfurdance",
+            "genre": "Furdance",
+            "frequency": "Yearly",
+            "human_readable_location": "Altrip, Rhineland-Palatinate",
+            "machine_readable_location": "49.43226,8.50208",
+            "start": "2024-06-01 16:00",
+            "end": "2024-06-01 (2:00 next morning)",
+            "ticket_price": "35 €"
+        }
+    ],
+    "FinFur Animus": [
+        {
+            "link": "https://animus.finfur.net/en",
+            "genre": "Furry-Convention",
+            "frequency": "Yearly",
+            "human_readable_location": "Vääksy, Finland",
+            "machine_readable_location": "61.16543,25.56276",
+            "start": "2024-10-17",
+            "end": "2024-10-20",
+            "expected_attendees": "250"
         }
     ]
 }
