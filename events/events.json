@@ -891,5 +891,17 @@
             "end": "2024-10-20",
             "expected_attendees": "250"
         }
+    ],
+    "Quadrennial Dutch Hacker Camp": [
+        {
+            "link": "https://why2025.org/",
+            "genre": "Tent-Camp",
+            "frequency": "Quadrennial",
+            "start": "2025-08-08",
+            "end": "2025-08-12",
+            "expected_attendees": "3500",
+            "human_readable_location": "Netherlands",
+            "machine_readable_location": "52.68659,4.77353"
+        }
     ]
 }
