@@ -13,6 +13,7 @@
     ],
     "FSCK": [
         {
+            "link": "https://events.ctbk.de/fsck-2024/",
             "genre": "Chaos-Event",
             "human_readable_location": "Backnang, Baden-Württemberg",
             "machine_readable_location": "48.94887,9.43436",
@@ -756,7 +757,9 @@
             "machine_readable_location": "51.07007,13.73168",
             "frequency": "Yearly",
             "start": "2024-06-29 19:00",
-            "end": "2024-06-29 (3:00 am tag dannach)"
+            "end": "2024-06-29 (3:00 am tag dannach)",
+            "ticket_price": "35 €",
+            "registration_start": "2024-03-24 20:00"
         }
     ],
     "Rheinfurdance": [
