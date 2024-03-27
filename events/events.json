@@ -906,5 +906,18 @@
             "human_readable_location": "Netherlands",
             "machine_readable_location": "52.68659,4.77353"
         }
+    ],
+    "Fantastischer Aalen Termin": [
+        {
+            "link": "https://hackwerk.fun/",
+            "genre": "Chaos-Event",
+            "frequency": "Yearly",
+            "start": "2024-07-26 16:00",
+            "end": "2024-07-28 18:00",
+            "expected_attendees": "100",
+            "human_readable_location": "Aalen, Baden-Württemberg",
+            "machine_readable_location": "48.85440,10.09088",
+            "ticket_price": "Free"
+        }
     ]
 }
