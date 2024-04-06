@@ -85,9 +85,12 @@
             "machine_readable_location": "55.60767,12.99415",
             "frequency": "Yearly",
             "expected_attendees": "2400",
-            "ticket_price": "Sold Out",
             "start": "2024-02-21",
             "end": "2024-02-25"
+        },
+        {
+            "start": "2025-02-19",
+            "end": "2025-02-23"
         }
     ],
     "Gdakon": [
@@ -140,6 +143,10 @@
             "ticket_price": "Free with the discount code 'cfvip' (includes Food, Drinks and entry into the Europa-Park)",
             "start": "2024-03-18",
             "end": "2024-03-21"
+        },
+        {
+            "start": "2025-03-17",
+            "end": "2025-03-20"
         }
     ],
     "FOSSGIS": [
@@ -734,6 +741,10 @@
             "expected_attendees": "20",
             "start": "2024-03-23",
             "end": "2024-03-23"
+        },
+        {
+            "start": "2024-04-20",
+            "end": "2024-04-20"
         }
     ],
     "Fursuitwalk Bad Dürkheim": [
@@ -931,6 +942,54 @@
             "human_readable_location": "Aalen, Baden-Württemberg",
             "machine_readable_location": "48.85440,10.09088",
             "ticket_price": "Free"
+        }
+    ],
+    "Embedded World": [
+        {
+            "link": "https://www.embedded-world.de/",
+            "genre": "IT-Event",
+            "frequency": "Yearly",
+            "start": "2024-04-09",
+            "end": "2024-04-11",
+            "expected_attendees": "27000",
+            "human_readable_location": "Nuremberg, Bavaria",
+            "machine_readable_location": "49.42203,11.11864",
+            "ticket_price": "25 €"
+        }
+    ],
+    "Haxogreen": [
+        {
+            "link": "https://blog.haxogreen.lu/",
+            "genre": "Tent-Camp",
+            "frequency": "Every 2 years",
+            "start": "2024-07-24",
+            "end": "2024-07-27",
+            "human_readable_location": "Dudelange, Luxembourg",
+            "machine_readable_location": "49.47829,6.07853",
+            "ticket_price": "69 €"
+        }
+    ],
+    "Furizon": [
+        {
+            "link": "https://furizon.net/",
+            "genre": "Furry-Convention",
+            "frequency": "Yearly",
+            "start": "2024-06-04",
+            "end": "2024-06-08",
+            "human_readable_location": "Cavalese, Italy",
+            "machine_readable_location": "46.29101,11.45742",
+            "ticket_price": "Sold out"
+        }
+    ],
+    "Furway": [
+        {
+            "link": "https://www.furway.no/",
+            "genre": "Furry-Convention",
+            "frequency": "Yearly",
+            "start": "2024-07-19",
+            "end": "2024-07-21",
+            "human_readable_location": "Tangen, Norway",
+            "machine_readable_location": "60.49558,10.58268"
         }
     ]
 }
