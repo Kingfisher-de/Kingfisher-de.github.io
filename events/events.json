@@ -637,6 +637,19 @@
             "end": "2024-12-30"
         }
     ],
+    "Tübinger Suitwalk": [
+        {
+            "link": "https://t.me/TuebingenFurMeet",
+            "genre": "Furry-Suitwalk",
+            "human_readable_location": "Tübingen, Baden-Württemberg",
+            "machine_readable_location": "48.51818,9.06037",
+            "frequency": "Yearly",
+            "ticket_price": "Free",
+            "expected_attendees": "40",
+            "start": "2024-05-18 12:00",
+            "end": "2024-05-18"
+        }
+    ],
     "Villinger Suitwalk": [
         {
             "link": "https://villinger.furtreff.de/suitwalk.php",
