@@ -46,7 +46,7 @@
             "expected_attendees": "5000",
             "ticket_price": "No Registration Required",
             "start": "2024-02-03",
-            "end": "2024-02-04"
+            "end": "2024-02-04 (Kicked out at 20:00)"
         }
     ],
     "Hackerhotel": [
@@ -711,6 +711,19 @@
             "Monthly",
             "Sunday",
             "3"
+        ]
+    },
+    "Hobbyhimmel Teammeeting": {
+        "link": "https://hobbyhimmel.de/series/hobbyhimmel-offenes-teammeeting/",
+        "genre": "Misc.",
+        "human_readable_location": "Stuttgart, Baden-Württemberg",
+        "machine_readable_location": "48.81865,9.16971",
+        "ticket_price": "No Registration Required",
+        "expected_attendees": "10",
+        "date_rule": [
+            "Monthly",
+            "Thursday",
+            "1"
         ]
     },
     "Karlsruher Suitwalk": [
