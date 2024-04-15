@@ -726,6 +726,18 @@
             "1"
         ]
     },
+    "NoName e.V. Stammtisch": {
+        "link": "https://www.noname-ev.de/",
+        "genre": "Chaos-Event",
+        "human_readable_location": "Heidelberg, Baden-Württemberg",
+        "machine_readable_location": "49.41747,8.67545",
+        "ticket_price": "No Registration Required",
+        "date_rule": [
+            "Monthly",
+            "Thursday",
+            "1"
+        ]
+    },
     "Karlsruher Suitwalk": [
         {
             "link": "https://karlsfurs.de/",
