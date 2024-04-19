@@ -1024,5 +1024,68 @@
             "human_readable_location": "Tangen, Norway",
             "machine_readable_location": "60.49558,10.58268"
         }
+    ],
+    "Linux-Infotag Augsburg": [
+        {
+            "link": "https://www.luga.de/LIT-2024/",
+            "genre": "IT-Event",
+            "frequency": "Yearly",
+            "start": "2024-04-20",
+            "end": "2024-04-20",
+            "human_readable_location": "Augsburg, Bavaria",
+            "machine_readable_location": "48.3584,10.9061",
+            "ticket_price": "No Registration Required",
+            "expected_attendees": "350"
+        }
+    ],
+    "oSC": [
+        {
+            "link": "https://events.opensuse.org/conferences/oSC24",
+            "genre": "IT-Event",
+            "frequency": "Yearly",
+            "start": "2024-06-27",
+            "end": "2024-06-29",
+            "human_readable_location": "Nuremberg, Bavaria",
+            "machine_readable_location": "49.43008,11.09384",
+            "ticket_price": "Free"
+        }
+    ],
+    "FrOSCon": [
+        {
+            "link": "https://www.froscon.de/",
+            "genre": "IT-Event",
+            "frequency": "Yearly",
+            "start": "2024-08-17",
+            "end": "2024-08-18",
+            "human_readable_location": "Sankt Augustin, North Rhine-Westphalia",
+            "machine_readable_location": "50.78021,7.18233",
+            "ticket_price": "No Registration Required"
+        }
+    ],
+    "Akademy": [
+        {
+            "link": "https://akademy.kde.org/2024/",
+            "genre": "IT-Event",
+            "frequency": "Yearly",
+            "start": "2024-09-07",
+            "end": "2024-09-12",
+            "human_readable_location": "Würzburg, Bavaria",
+            "machine_readable_location": "49.78119,9.97309",
+            "ticket_price": "Free",
+            "expected_attendees": "200"
+        }
+    ],
+    "EuroRust": [
+        {
+            "link": "https://eurorust.eu/",
+            "genre": "IT-Event",
+            "frequency": "Yearly",
+            "start": "2024-10-09",
+            "end": "2024-10-11",
+            "human_readable_location": "Vienna, Austria",
+            "machine_readable_location": "48.18018,16.43081",
+            "ticket_price": "180 €",
+            "expected_attendees": "500"
+        }
     ]
 }
