@@ -1050,18 +1050,6 @@
             "ticket_price": "Free"
         }
     ],
-    "FrOSCon": [
-        {
-            "link": "https://www.froscon.de/",
-            "genre": "IT-Event",
-            "frequency": "Yearly",
-            "start": "2024-08-17",
-            "end": "2024-08-18",
-            "human_readable_location": "Sankt Augustin, North Rhine-Westphalia",
-            "machine_readable_location": "50.78021,7.18233",
-            "ticket_price": "No Registration Required"
-        }
-    ],
     "Akademy": [
         {
             "link": "https://akademy.kde.org/2024/",
@@ -1086,6 +1074,17 @@
             "machine_readable_location": "48.18018,16.43081",
             "ticket_price": "180 €",
             "expected_attendees": "500"
+        }
+    ],
+    "DHCP": [
+        {
+            "link": "https://dhcp.cfhn.it/",
+            "genre": "Chaos-Event",
+            "frequency": "Yearly",
+            "start": "2024-10-31",
+            "end": "2024-11-03",
+            "human_readable_location": "Heilbronn, Baden-Württemberg",
+            "machine_readable_location": "49.14384,9.21479"
         }
     ]
 }
