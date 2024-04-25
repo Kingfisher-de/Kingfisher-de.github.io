@@ -1086,5 +1086,31 @@
             "human_readable_location": "Heilbronn, Baden-Württemberg",
             "machine_readable_location": "49.14384,9.21479"
         }
+    ],
+    "10 Jahre Freifunk Stuttgart": [
+        {
+            "link": "https://cloud.freifunk-stuttgart.de/apps/forms/s/ssjHSnbsWFBX6fwizgSPccwb",
+            "genre": "Chaos-Event",
+            "frequency": "Irregular",
+            "human_readable_location": "Backnang, Baden-Württemberg",
+            "machine_readable_location": "48.94866,9.42961",
+            "start": "2024-05-18",
+            "end": "2024-05-18",
+            "ticket_price": "Free"
+        }
+    ],
+    "Linux Plumbers Conference": [
+        {
+            "link": "https://lpc.events/",
+            "genre": "IT-Event",
+            "frequency": "Yearly",
+            "human_readable_location": "Vienna, Austria",
+            "machine_readable_location": "48.23486,16.41370",
+            "start": "2024-09-18",
+            "end": "2024-09-20",
+            "expected_attendees": "400",
+            "ticket_price": "375 €",
+            "dev_comment": "Source for expected_attendees: https://lpc.events/blog/2022/"
+        }
     ]
 }
