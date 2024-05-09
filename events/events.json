@@ -1112,5 +1112,64 @@
             "ticket_price": "375 €",
             "dev_comment": "Source for expected_attendees: https://lpc.events/blog/2022/"
         }
+    ],
+    "Tropical Furry Islands": [
+        {
+            "link": "https://tropical-furry-islands.de/",
+            "genre": "Furry-Convention",
+            "frequency": "Yearly",
+            "human_readable_location": "Brandenburg, Germany",
+            "machine_readable_location": "52.03895,13.74856",
+            "start": "2024-09-04",
+            "end": "2024-09-08",
+            "expected_attendees": "200"
+        }
+    ],
+    "SinFur Main Event": [
+        {
+            "link": "https://sinfur.net/",
+            "genre": "Misc.",
+            "frequency": "Yearly",
+            "human_readable_location": "Rheinbach, North Rhine-Westphalia",
+            "machine_readable_location": "50.64411,6.92183",
+            "start": "2024-07-27",
+            "end": "2024-07-27",
+            "ticket_price": "55 €"
+        }
+    ],
+    "SinFur BBQ-Event": [
+        {
+            "link": "https://sinfur.net/",
+            "genre": "Misc.",
+            "frequency": "Yearly",
+            "human_readable_location": "Wachtberg, North Rhine-Westphalia",
+            "machine_readable_location": "50.62830,7.13199",
+            "start": "2024-07-26",
+            "end": "2024-07-26",
+            "ticket_price": "10 €"
+        }
+    ],
+    "Furmeet Rosenstüble": [
+        {
+            "link": "https://s-s-f.de/events/furmeet-rosenstuble-am-29062024",
+            "genre": "Furry-Stammtisch",
+            "frequency": "Irregular",
+            "human_readable_location": "Karlsruhe, Baden-Württemberg",
+            "machine_readable_location": "48.99349,8.36258",
+            "start": "2024-06-29",
+            "end": "2024-06-30",
+            "ticket_price": "Free"
+        }
+    ],
+    "Elbefurdance": [
+        {
+            "link": "https://elbefurdance.de/",
+            "genre": "Furdance",
+            "frequency": "Yearly",
+            "human_readable_location": "Magdeburg Saxony-Anhalt",
+            "machine_readable_location": "52.15327,11.63600",
+            "start": "2024-06-15",
+            "end": "2024-06-15"
+        }
     ]
 }
