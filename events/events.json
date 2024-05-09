@@ -1171,5 +1171,17 @@
             "start": "2024-06-15",
             "end": "2024-06-15"
         }
+    ],
+    "VSpace Sommerfest": [
+        {
+            "link": "https://hub.vspace.one/apps/forms/s/gS94WARHBXmskEFaaYZQYWAX",
+            "genre": "Chaos-Event",
+            "frequency": "Yearly",
+            "human_readable_location": "Villingen-Schwenningen, Baden-Württemberg",
+            "machine_readable_location": "48.06765,8.44442",
+            "start": "2024-07-20 15:00",
+            "end": "2024-07-20",
+            "ticket_price": "Free"
+        }
     ]
 }
