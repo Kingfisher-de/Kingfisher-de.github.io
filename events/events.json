@@ -1183,5 +1183,17 @@
             "end": "2024-07-20",
             "ticket_price": "Free"
         }
+    ],
+    "Fantasy Basel": [
+        {
+            "link": "https://fantasybasel.ch/",
+            "genre": "Misc.",
+            "frequency": "Yearly",
+            "human_readable_location": "Basel, Switzerland",
+            "machine_readable_location": "47.56456,7.60158",
+            "start": "2024-05-09",
+            "end": "2024-05-11",
+            "expected_attendees": "60000"
+        }
     ]
 }
