@@ -1195,5 +1195,17 @@
             "end": "2024-05-11",
             "expected_attendees": "60000"
         }
+    ],
+    "Anime Focal": [
+        {
+            "link": "https://www.animefocal.com/luxembourg/en/",
+            "genre": "Misc.",
+            "frequency": "Yearly",
+            "human_readable_location": "Luxembourg",
+            "machine_readable_location": "49.63589,6.16926",
+            "start": "2025-02-08",
+            "end": "2025-02-09",
+            "expected_attendees": "20000"
+        }
     ]
 }
