@@ -118,7 +118,7 @@
             "end": "2024-03-02"
         }
     ],
-    "Chemnitzer Linux Tage": [
+    "Chemnitzer Linuxtage": [
         {
             "link": "https://chemnitzer.linux-tage.de/",
             "genre": "IT-Event",
@@ -167,11 +167,17 @@
         {
             "link": "https://www.easterhegg.eu/",
             "genre": "Chaos-Event",
-            "human_readable_location": "Regensburg, Bavaria",
-            "machine_readable_location": "49.00236,12.09738",
             "frequency": "Yearly",
             "expected_attendees": "400",
             "dev_comment": "Source for expected_attendees: https://www.easterhegg.eu/ 'Traditionell orientiert sich der EasterHegg von der Teilnehmerzahl immer an den frühen Congressen. Das bedeutet höchstens etwa 400-500 Teilnehmer.'",
+            "start": "2023-04-07",
+            "end": "2023-04-11",
+            "human_readable_location": "Hamburg",
+            "machine_readable_location": "53.58331,10.02179"
+        },
+        {
+            "human_readable_location": "Regensburg, Bavaria",
+            "machine_readable_location": "49.00236,12.09738",
             "start": "2024-03-29",
             "end": "2024-04-01"
         }
@@ -329,7 +335,7 @@
             "end": "2024-06-10"
         }
     ],
-    "vvoid camp": [
+    "VVoid Camp": [
         {
             "link": "https://www.vvoid.camp/",
             "genre": "Tent-Camp",
@@ -345,6 +351,13 @@
             "dev_comment_2": "Source for ticket_sale_starts: https://vviki.vvoid.camp/",
             "start": "2024-06-13",
             "end": "2024-06-16"
+        },
+        {
+            "link": "https://www.vvoid.camp",
+            "start": "2025-07-17",
+            "end": "2025-07-21",
+            "human_readable_location": "Bavaria",
+            "machine_readable_location": "48.77301,13.46755"
         }
     ],
     "Castlecon": [
@@ -640,6 +653,10 @@
             "ticket_price": "175 €",
             "expected_attendees": "12000",
             "dev_comment": "Source for expected_attendees: https://www.hamburg.com/business/16109410/main/ '50 halls with a total capacity of 12,000 visitors'. I'm assuming the CCC sells out.",
+            "start": "2023-12-27",
+            "end": "2023-12-31"
+        },
+        {
             "start": "2024-12-27",
             "end": "2024-12-30"
         }
@@ -668,6 +685,10 @@
             "expected_attendees": "12",
             "start": "2024-04-20",
             "end": "2024-04-20"
+        },
+        {
+            "start": "2024-06-15",
+            "end": "2024-06-15"
         }
     ],
     "Heilbronner Suitwalk": [
@@ -1206,6 +1227,178 @@
             "start": "2025-02-08",
             "end": "2025-02-09",
             "expected_attendees": "20000"
+        }
+    ],
+    "jetzt": [
+        {
+            "link": "https://chaos.jetzt/articles/jetzt4-tickets-verfuegbar.html",
+            "genre": "Chaos-Event",
+            "start": "2024-02-09",
+            "end": "2024-02-12",
+            "human_readable_location": "Bochum, North Rhine-Westphalia",
+            "machine_readable_location": "51.48091,7.20856"
+        },
+        {
+            "link": "https://chaos.jetzt/articles/jetzt5-tickets-verfuegbar.html",
+            "start": "2024-05-24",
+            "end": "2024-05-27",
+            "human_readable_location": "Dresden, Saxony",
+            "machine_readable_location": "51.08106,13.72854"
+        }
+    ],
+    "Hack im Pott": [
+        {
+            "link": "https://hackimpott.de/",
+            "genre": "Chaos-Event",
+            "start": "2024-02-23",
+            "end": "2024-02-26",
+            "human_readable_location": "Wülfrath, North Rhine-Westphalia",
+            "machine_readable_location": "51.28250,7.03072"
+        }
+    ],
+    "deutscher Tag des offenen Hackspaces": [
+        {
+            "genre": "Chaos-Event",
+            "start": "2024-03-02",
+            "end": "2024-03-03"
+        }
+    ],
+    "Neu-Eröffnung bytewerk": [
+        {
+            "link": "https://www.bytewerk.org/",
+            "genre": "Chaos-Event",
+            "start": "2024-03-09",
+            "end": "2024-03-10",
+            "human_readable_location": "Ingolstadt, Bavaria",
+            "machine_readable_location": "48.76679,11.42594"
+        }
+    ],
+    "Internationaler Tag des offenen Hackspaces": [
+        {
+            "link": "https://wiki.hackerspaces.org/Open_Hackspace_Day_2024",
+            "genre": "Chaos-Event",
+            "start": "2024-03-30",
+            "end": "2024-03-31"
+        }
+    ],
+    "23 Jahre Chaosdorf": [
+        {
+            "link": "https://chaosdorf.de/2024/04/23-jahre-chaosdorf/",
+            "genre": "Chaos-Event",
+            "start": "2024-04-20",
+            "end": "2024-04-21",
+            "human_readable_location": "Düsseldorf, North Rhine-Westphalia",
+            "machine_readable_location": "51.21254,6.79962"
+        }
+    ],
+    "DIWO Week": [
+        {
+            "link": "https://www.metaknoten.net/veranstaltungen/diwo-week-2024",
+            "genre": "Chaos-Event",
+            "start": "2024-05-06",
+            "end": "2024-05-12",
+            "human_readable_location": "Dresden, Saxony",
+            "machine_readable_location": "51.07776,13.706732"
+        }
+    ],
+    "Kamphack Münster": [
+        {
+            "link": "https://kamphack.de/",
+            "genre": "Chaos-Event",
+            "start": "2024-05-10",
+            "end": "2024-05-13",
+            "human_readable_location": "Münster, North Rhine-Westphalia",
+            "machine_readable_location": "51.94437,7.63896"
+        }
+    ],
+    "Chaotikum Sommerfest": [
+        {
+            "link": "https://chaotikum.org/blog/2024/03/25/maifest/",
+            "genre": "Chaos-Event",
+            "start": "2024-05-11",
+            "end": "2024-05-12",
+            "human_readable_location": "Lübeck, Schleswig-Holstein",
+            "machine_readable_location": "53.86883,10.67139"
+        }
+    ],
+    "Schweizer PostgreSQL-Tag": [
+        {
+            "link": "https://www.pgday.ch/",
+            "genre": "IT-Event",
+            "start": "2024-06-27",
+            "end": "2024-06-29",
+            "human_readable_location": "Rapperswil, Switzerland",
+            "machine_readable_location": "47.22392,8.81725"
+        }
+    ],
+    "fedicamp": [
+        {
+            "link": "https://fedi.camp/",
+            "genre": "Tent-Camp",
+            "start": "2024-07-16",
+            "end": "2024-07-22",
+            "human_readable_location": "Lower Saxony",
+            "machine_readable_location": "53.03014,11.30785"
+        }
+    ],
+    "Hackover": [
+        {
+            "link": "https://hackover24.de/",
+            "genre": "Chaos-Event",
+            "start": "2024-08-02",
+            "end": "2024-08-05",
+            "human_readable_location": "Hanover, Lower Saxony",
+            "machine_readable_location": "52.38809,9.71803"
+        }
+    ],
+    "Vintage Computer Festival Europe": [
+        {
+            "link": "https://www.vcfe.org/D/",
+            "genre": "Chaos-Event",
+            "start": "2024-09-07",
+            "end": "2024-09-09",
+            "human_readable_location": "Munich, Bavaria",
+            "machine_readable_location": "48.13226,11.62732"
+        }
+    ],
+    "Circuit Control": [
+        {
+            "link": "https://www.metaknoten.net/veranstaltungen/circuit-control-festival-2024",
+            "genre": "Chaos-Event",
+            "start": "2024-09-09",
+            "end": "2024-09-15",
+            "human_readable_location": "Dresden, Saxony",
+            "machine_readable_location": "51.08153,13.73039"
+        }
+    ],
+    "BalCCon": [
+        {
+            "link": "https://www.balccon.org",
+            "genre": "Chaos-Event",
+            "start": "2024-09-20",
+            "end": "2024-09-23",
+            "human_readable_location": "Serbia",
+            "machine_readable_location": "45.25789,19.82333"
+        }
+    ],
+    "BigBrotherAwards": [
+        {
+            "link": "https://bigbrotherawards.de/",
+            "genre": "Chaos-Event",
+            "start": "2024-10-11",
+            "end": "2024-10-12",
+            "human_readable_location": "Bielefeld, North Rhine-Westphalia",
+            "machine_readable_location": "52.022009,8.54367"
+        }
+    ],
+    "Night of open Knowledge": [
+        {
+            "link": "https://2024.nook-luebeck.de/",
+            "genre": "Chaos-Event",
+            "start": "2024-11-09",
+            "end": "2024-11-10",
+            "human_readable_location": "Lübeck, Schleswig-Holstein",
+            "machine_readable_location": "53.83434,10.70017"
         }
     ]
 }
