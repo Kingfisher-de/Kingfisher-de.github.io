@@ -795,6 +795,10 @@
         {
             "start": "2024-04-20",
             "end": "2024-04-20"
+        },
+        {
+            "start": "2024-05-26",
+            "end": "2024-05-26"
         }
     ],
     "Fursuitwalk Bad Dürkheim": [
@@ -1399,6 +1403,15 @@
             "end": "2024-11-10",
             "human_readable_location": "Lübeck, Schleswig-Holstein",
             "machine_readable_location": "53.83434,10.70017"
+        }
+    ],
+    "camp++": [
+        {
+            "link": "https://camp.hsbp.org/2024/pp7e8/",
+            "start": "2024-08-08",
+            "end": "2024-08-12",
+            "human_readable_location": "Hungary",
+            "machine_readable_location": "47.66935,18.30581"
         }
     ]
 }
