@@ -734,6 +734,30 @@
             "3"
         ]
     },
+    "Chaostreff Tübingen im KI-Makerspace": {
+        "link": "https://cttue.de/",
+        "genre": "Chaos-Event",
+        "human_readable_location": "Tübingen, Baden-Württemberg",
+        "machine_readable_location": "48.51782,9.06092",
+        "ticket_price": "No Registration Required",
+        "date_rule": [
+            "Monthly",
+            "Sunday",
+            "0"
+        ]
+    },
+    "Chaostreff Tübingen im Fablab": {
+        "link": "https://cttue.de/",
+        "genre": "Chaos-Event",
+        "human_readable_location": "Tübingen, Baden-Württemberg",
+        "machine_readable_location": "48.51561,9.06304",
+        "ticket_price": "No Registration Required",
+        "date_rule": [
+            "Monthly",
+            "Monday",
+            "2"
+        ]
+    },
     "Hobbyhimmel Teammeeting": {
         "link": "https://hobbyhimmel.de/series/hobbyhimmel-offenes-teammeeting/",
         "genre": "Misc.",
