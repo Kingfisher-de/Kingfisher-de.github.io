@@ -981,6 +981,10 @@
             "frequency": "Irregular",
             "ticket_price": "Free",
             "expected_attendees": "100"
+        },
+        {
+            "start": "2024-07-06",
+            "end": "2024-07-06"
         }
     ],
     "Rheinfurs Stammtisch": [
@@ -1304,6 +1308,7 @@
         {
             "link": "https://hackimpott.de/",
             "genre": "Chaos-Event",
+            "frequency": "Yearly",
             "start": "2024-02-23",
             "end": "2024-02-26",
             "human_readable_location": "Wülfrath, North Rhine-Westphalia",
@@ -1313,6 +1318,7 @@
     "deutscher Tag des offenen Hackspaces": [
         {
             "genre": "Chaos-Event",
+            "frequency": "Yearly",
             "start": "2024-03-02",
             "end": "2024-03-03"
         }
@@ -1321,6 +1327,7 @@
         {
             "link": "https://www.bytewerk.org/",
             "genre": "Chaos-Event",
+            "frequency": "Yearly",
             "start": "2024-03-09",
             "end": "2024-03-10",
             "human_readable_location": "Ingolstadt, Bavaria",
@@ -1331,6 +1338,7 @@
         {
             "link": "https://wiki.hackerspaces.org/Open_Hackspace_Day_2024",
             "genre": "Chaos-Event",
+            "frequency": "Yearly",
             "start": "2024-03-30",
             "end": "2024-03-31"
         }
@@ -1339,6 +1347,7 @@
         {
             "link": "https://chaosdorf.de/2024/04/23-jahre-chaosdorf/",
             "genre": "Chaos-Event",
+            "frequency": "Yearly",
             "start": "2024-04-20",
             "end": "2024-04-21",
             "human_readable_location": "Düsseldorf, North Rhine-Westphalia",
@@ -1349,6 +1358,7 @@
         {
             "link": "https://www.metaknoten.net/veranstaltungen/diwo-week-2024",
             "genre": "Chaos-Event",
+            "frequency": "Yearly",
             "start": "2024-05-06",
             "end": "2024-05-12",
             "human_readable_location": "Dresden, Saxony",
@@ -1359,6 +1369,7 @@
         {
             "link": "https://kamphack.de/",
             "genre": "Chaos-Event",
+            "frequency": "Yearly",
             "start": "2024-05-10",
             "end": "2024-05-13",
             "human_readable_location": "Münster, North Rhine-Westphalia",
@@ -1369,6 +1380,7 @@
         {
             "link": "https://chaotikum.org/blog/2024/03/25/maifest/",
             "genre": "Chaos-Event",
+            "frequency": "Yearly",
             "start": "2024-05-11",
             "end": "2024-05-12",
             "human_readable_location": "Lübeck, Schleswig-Holstein",
@@ -1379,6 +1391,7 @@
         {
             "link": "https://www.pgday.ch/",
             "genre": "IT-Event",
+            "frequency": "Yearly",
             "start": "2024-06-27",
             "end": "2024-06-29",
             "human_readable_location": "Rapperswil, Switzerland",
@@ -1389,6 +1402,7 @@
         {
             "link": "https://fedi.camp/",
             "genre": "Tent-Camp",
+            "frequency": "Yearly",
             "start": "2024-07-16",
             "end": "2024-07-22",
             "human_readable_location": "Lower Saxony",
@@ -1399,6 +1413,7 @@
         {
             "link": "https://hackover24.de/",
             "genre": "Chaos-Event",
+            "frequency": "Yearly",
             "start": "2024-08-02",
             "end": "2024-08-05",
             "human_readable_location": "Hanover, Lower Saxony",
@@ -1409,6 +1424,7 @@
         {
             "link": "https://www.vcfe.org/D/",
             "genre": "Chaos-Event",
+            "frequency": "Yearly",
             "start": "2024-09-07",
             "end": "2024-09-09",
             "human_readable_location": "Munich, Bavaria",
@@ -1419,6 +1435,7 @@
         {
             "link": "https://www.metaknoten.net/veranstaltungen/circuit-control-festival-2024",
             "genre": "Chaos-Event",
+            "frequency": "Yearly",
             "start": "2024-09-09",
             "end": "2024-09-15",
             "human_readable_location": "Dresden, Saxony",
@@ -1429,6 +1446,7 @@
         {
             "link": "https://www.balccon.org",
             "genre": "Chaos-Event",
+            "frequency": "Yearly",
             "start": "2024-09-20",
             "end": "2024-09-23",
             "human_readable_location": "Serbia",
@@ -1439,6 +1457,7 @@
         {
             "link": "https://bigbrotherawards.de/",
             "genre": "Chaos-Event",
+            "frequency": "Yearly",
             "start": "2024-10-11",
             "end": "2024-10-12",
             "human_readable_location": "Bielefeld, North Rhine-Westphalia",
@@ -1449,6 +1468,7 @@
         {
             "link": "https://2024.nook-luebeck.de/",
             "genre": "Chaos-Event",
+            "frequency": "Yearly",
             "start": "2024-11-09",
             "end": "2024-11-10",
             "human_readable_location": "Lübeck, Schleswig-Holstein",
@@ -1459,6 +1479,7 @@
         {
             "link": "https://camp.hsbp.org/2024/pp7e8/",
             "genre": "Chaos-Event",
+            "frequency": "Yearly",
             "start": "2024-08-08",
             "end": "2024-08-12",
             "human_readable_location": "Hungary",
@@ -1469,6 +1490,7 @@
         {
             "link": "https://www.flashback-event.de/flashback-symposium-01/",
             "genre": "Misc.",
+            "frequency": "Yearly",
             "start": "2024-06-14",
             "end": "2024-06-17",
             "human_readable_location": "Plauen, Saxony",
@@ -1479,6 +1501,7 @@
         {
             "link": "https://ccc-ffm.de/seezeit-2024",
             "genre": "Tent-Camp",
+            "frequency": "Yearly",
             "start": "2024-08-30",
             "end": "2024-09-02",
             "human_readable_location": "Offenbach, Hesse",
@@ -1489,10 +1512,22 @@
         {
             "link": "https://interfug.de/",
             "genre": "Chaos-Event",
+            "frequency": "Yearly",
             "start": "2024-10-12",
             "end": "2024-10-14",
             "human_readable_location": "Chemnitz, Saxony",
             "machine_readable_location": "50.82016,12.93151"
+        }
+    ],
+    "Ulmer Furs auf dem Ulmer Volksfest": [
+        {
+            "link": "https://ulmer-furs.de/ulmer-volksfest-2024/",
+            "genre": "Furry-Suitwalk",
+            "frequency": "Yearly",
+            "human_readable_location": "Ulm, Baden-Württemberg",
+            "machine_readable_location": "48.41258,10.01173",
+            "start": "2024-07-17 15:00",
+            "end": "2024-07-17 18:00"
         }
     ]
 }
