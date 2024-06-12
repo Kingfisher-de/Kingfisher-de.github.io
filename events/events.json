@@ -161,6 +161,10 @@
             "dev_comment": "Source for expected_attendees: https://de.wikipedia.org/wiki/FOSSGIS",
             "start": "2024-03-20",
             "end": "2024-03-23"
+        },
+        {
+            "start": "2025-03-26",
+            "end": "2025-03-29"
         }
     ],
     "Easterhegg": [
@@ -356,6 +360,13 @@
             "link": "https://www.vvoid.camp",
             "start": "2025-07-17",
             "end": "2025-07-21",
+            "human_readable_location": "Bavaria",
+            "machine_readable_location": "48.77301,13.46755"
+        },
+        {
+            "link": "https://www.vvoid.camp",
+            "start": "2026-07-09",
+            "end": "2026-07-13",
             "human_readable_location": "Bavaria",
             "machine_readable_location": "48.77301,13.46755"
         }
@@ -706,6 +717,10 @@
         {
             "start": "2024-05-04",
             "end": "2024-05-04"
+        },
+        {
+            "start": "2024-09-07",
+            "end": "2024-09-07"
         }
     ],
     "Heilbronner Furry-Stammtisch": {
@@ -836,6 +851,10 @@
             "expected_attendees": "20",
             "start": "2024-02-25",
             "end": "2024-02-25"
+        },
+        {
+            "start": "2024-07-20",
+            "end": "2024-07-20"
         }
     ],
     "Fursuitwalk Weinheim": [
@@ -1272,6 +1291,13 @@
             "end": "2024-05-27",
             "human_readable_location": "Dresden, Saxony",
             "machine_readable_location": "51.08106,13.72854"
+        },
+        {
+            "link": "https://events.ccc.de/2024/05/27/jetzt6-geekend/",
+            "start": "2024-09-06",
+            "end": "2024-09-09",
+            "human_readable_location": "Vienna, Austria",
+            "machine_readable_location": "48.20946,16.35609"
         }
     ],
     "Hack im Pott": [
@@ -1437,6 +1463,36 @@
             "end": "2024-08-12",
             "human_readable_location": "Hungary",
             "machine_readable_location": "47.66935,18.30581"
+        }
+    ],
+    "Flashback Symposium": [
+        {
+            "link": "https://www.flashback-event.de/flashback-symposium-01/",
+            "genre": "Misc.",
+            "start": "2024-06-14",
+            "end": "2024-06-17",
+            "human_readable_location": "Plauen, Saxony",
+            "machine_readable_location": "50.54185,12.13548"
+        }
+    ],
+    "SeeZeit": [
+        {
+            "link": "https://ccc-ffm.de/seezeit-2024",
+            "genre": "Tent-Camp",
+            "start": "2024-08-30",
+            "end": "2024-09-02",
+            "human_readable_location": "Offenbach, Hesse",
+            "machine_readable_location": "50.02291,9.02122"
+        }
+    ],
+    "Interfug": [
+        {
+            "link": "https://interfug.de/",
+            "genre": "Chaos-Event",
+            "start": "2024-10-12",
+            "end": "2024-10-14",
+            "human_readable_location": "Chemnitz, Saxony",
+            "machine_readable_location": "50.82016,12.93151"
         }
     ]
 }
