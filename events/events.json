@@ -1529,5 +1529,16 @@
             "start": "2024-07-17 15:00",
             "end": "2024-07-17 18:00"
         }
+    ],
+    "Open Source Hardware Konferenz": [
+        {
+            "link": "https://www.oshop-network.de/konferenz/",
+            "genre": "IT-Event",
+            "frequency": "Yearly",
+            "start": "2024-09-30",
+            "end": "2024-10-02",
+            "human_readable_location": "Dresden, Saxony",
+            "machine_readable_location": "51.043959,13.74676"
+        }
     ]
 }
