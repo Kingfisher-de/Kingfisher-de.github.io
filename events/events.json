@@ -817,6 +817,10 @@
         {
             "start": "2024-06-08",
             "end": "2024-06-08"
+        },
+        {
+            "start": "2024-10-19",
+            "end": "2024-10-19"
         }
     ],
     "Fursuitwalk Speyer": [
@@ -1538,7 +1542,18 @@
             "start": "2024-09-30",
             "end": "2024-10-02",
             "human_readable_location": "Dresden, Saxony",
-            "machine_readable_location": "51.043959,13.74676"
+            "machine_readable_location": "51.04395,13.74676"
+        }
+    ],
+    "ACME Labs - Tag der offenen Tür": [
+        {
+            "link": "https://events.ccc.de/2024/06/10/acmelabs-tdot/",
+            "genre": "Chaos-Event",
+            "frequency": "Yearly",
+            "start": "2024-06-15 13:00",
+            "end": "2024-06-15",
+            "human_readable_location": "Bielefeld, North Rhine-Westphalia",
+            "machine_readable_location": "52.02045,8.54647"
         }
     ]
 }
