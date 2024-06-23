@@ -1555,5 +1555,16 @@
             "human_readable_location": "Bielefeld, North Rhine-Westphalia",
             "machine_readable_location": "52.02045,8.54647"
         }
+    ],
+    "Tag der digitalen Freiheit": [
+        {
+            "link": "https://tdf.cttue.de/",
+            "genre": "Chaos-Event",
+            "frequency": "Yearly",
+            "start": "2024-07-06 13:00",
+            "end": "2024-07-07 13:00",
+            "human_readable_location": "Tübingen, Baden-Württemberg",
+            "machine_readable_location": "48.51620,9.06329"
+        }
     ]
 }
