@@ -1581,5 +1581,16 @@
             "human_readable_location": "Calw, Baden-Württemberg",
             "machine_readable_location": "48.71801,8.68334"
         }
+    ],
+    "Evoke": [
+        {
+            "link": "https://evoke.eu/",
+            "genre": "Chaos-Event",
+            "frequency": "Yearly",
+            "start": "2024-08-16",
+            "end": "2024-08-18",
+            "human_readable_location": "Cologne, North Rhine-Westphalia",
+            "machine_readable_location": "50.93523,7.00903"
+        }
     ]
 }
