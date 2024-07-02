@@ -61,6 +61,10 @@
             "dev_comment": "Source for expected_attendees: Here it says https://hackerhotel.nl/?page_id=3867 there are two groups of 175 people.",
             "start": "2024-02-09",
             "end": "2024-02-11"
+        },
+        {
+            "start": "2025-02-14",
+            "end": "2025-02-16"
         }
     ],
     "MountainBytes": [
@@ -1565,6 +1569,17 @@
             "end": "2024-07-07 13:00",
             "human_readable_location": "Tübingen, Baden-Württemberg",
             "machine_readable_location": "48.51620,9.06329"
+        }
+    ],
+    "UFurryA": [
+        {
+            "link": "https://s-s-f.de/events/ufurrya-2024",
+            "genre": "Tent-Camp",
+            "frequency": "Yearly",
+            "start": "2024-08-28",
+            "end": "2024-09-01",
+            "human_readable_location": "Calw, Baden-Württemberg",
+            "machine_readable_location": "48.71801,8.68334"
         }
     ]
 }
