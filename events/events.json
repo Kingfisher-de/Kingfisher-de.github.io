@@ -846,6 +846,10 @@
         {
             "start": "2024-05-26",
             "end": "2024-05-26"
+        },
+        {
+            "start": "2024-09-15",
+            "end": "2024-09-15"
         }
     ],
     "Fursuitwalk Bad Dürkheim": [
@@ -1591,6 +1595,28 @@
             "end": "2024-08-18",
             "human_readable_location": "Cologne, North Rhine-Westphalia",
             "machine_readable_location": "50.93523,7.00903"
+        }
+    ],
+    "Hacks on the Beach": [
+        {
+            "link": "https://hotb.c3fl.de/de/",
+            "genre": "Chaos-Event",
+            "frequency": "Yearly",
+            "start": "2024-09-27",
+            "end": "2024-09-30",
+            "human_readable_location": "Flensburg, Schleswig-Holstein",
+            "machine_readable_location": "54.82344,9.49020"
+        }
+    ],
+    "Sachsen Furs Jahreswechsel": [
+        {
+            "link": "https://www.sachsenfurs.de/de/sfj/",
+            "genre": "Misc.",
+            "frequency": "Yearly",
+            "start": "2024-12-29",
+            "end": "2025-01-01",
+            "human_readable_location": "Dessau, Saxony-Anhalt",
+            "machine_readable_location": "51.84441,12.20858"
         }
     ]
 }
