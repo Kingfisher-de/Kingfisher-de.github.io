@@ -1618,5 +1618,27 @@
             "human_readable_location": "Dessau, Saxony-Anhalt",
             "machine_readable_location": "51.84441,12.20858"
         }
+    ],
+    "ChaosKunstGefrickel": [
+        {
+            "link": "https://chaoskunstgefrickel.werkraum.space",
+            "genre": "Chaos-Event",
+            "frequency": "Irregular",
+            "start": "2024-09-07",
+            "end": "2024-09-08",
+            "human_readable_location": "Zittau, Saxony",
+            "machine_readable_location": "50.89736,14.80423"
+        }
+    ],
+    "RGB2R": [
+        {
+            "link": "https://www.rgb2r.de/",
+            "genre": "Misc.",
+            "frequency": "Yearly",
+            "start": "2024-10-31",
+            "end": "2024-11-04",
+            "human_readable_location": "Heidelberg, Baden-Württemberg",
+            "machine_readable_location": "49.41551,8.74342"
+        }
     ]
 }
