@@ -1661,5 +1661,17 @@
             "human_readable_location": "Heidelberg, Baden-Württemberg",
             "machine_readable_location": "49.41551,8.74342"
         }
+    ],
+    "Esslinger Suitwalk": [
+        {
+            "link": "https://s-s-f.de/events/9-esslinger-suitwalk-2024",
+            "genre": "Furry-Suitwalk",
+            "frequency": "Yearly",
+            "start": "2024-09-07",
+            "end": "2024-09-07",
+            "expected_attendees": "150",
+            "human_readable_location": "Esslingen am Neckar, Baden-Württemberg",
+            "machine_readable_location": "48.73754,9.30597"
+        }
     ]
 }
