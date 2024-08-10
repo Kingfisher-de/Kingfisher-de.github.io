@@ -1680,8 +1680,6 @@
             "human_readable_location": "Esslingen am Neckar, Baden-Württemberg",
             "machine_readable_location": "48.73754,9.30597"
         }
-<<<<<<< HEAD
-=======
     ],
     "Bildet Netze!": [
         {
@@ -1700,6 +1698,5 @@
             "human_readable_location": "Berlin",
             "machine_readable_location": "52.45692,13.52643"
         }
->>>>>>> 7d94ce4 (ncm)
     ]
 }
