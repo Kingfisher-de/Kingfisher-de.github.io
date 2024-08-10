@@ -504,6 +504,13 @@
             "ticket_price": "666 DKK",
             "start": "2024-07-17",
             "end": "2024-07-24"
+        },
+        {
+            "link": "https://bornhack.dk/bornhack-2025/",
+            "start": "2025-07-16",
+            "end": "2025-07-24",
+            "human_readable_location": "Gelsted, Denmark",
+            "machine_readable_location": "55.38565,9.93894"
         }
     ],
     "Awoostria": [
@@ -1673,5 +1680,26 @@
             "human_readable_location": "Esslingen am Neckar, Baden-Württemberg",
             "machine_readable_location": "48.73754,9.30597"
         }
+<<<<<<< HEAD
+=======
+    ],
+    "Bildet Netze!": [
+        {
+            "link": "https://netzpolitik.org/bildet-netze/",
+            "start": "2024-09-13",
+            "end": "2024-09-14",
+            "human_readable_location": "Berlin",
+            "machine_readable_location": "52.51613,13.40907"
+        }
+    ],
+    "Vintage Computing Festival Berlin": [
+        {
+            "link": "https://vcfb.de/2024/",
+            "start": "2024-10-19",
+            "end": "2024-10-21",
+            "human_readable_location": "Berlin",
+            "machine_readable_location": "52.45692,13.52643"
+        }
+>>>>>>> 7d94ce4 (ncm)
     ]
 }
