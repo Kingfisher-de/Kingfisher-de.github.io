@@ -1332,7 +1332,8 @@
             "start": "2024-02-09",
             "end": "2024-02-12",
             "human_readable_location": "Bochum, North Rhine-Westphalia",
-            "machine_readable_location": "51.48091,7.20856"
+            "machine_readable_location": "51.48091,7.20856",
+            "frequency": "Irregular"
         },
         {
             "link": "https://chaos.jetzt/articles/jetzt5-tickets-verfuegbar.html",

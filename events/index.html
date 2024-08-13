@@ -120,7 +120,6 @@
     function new_known_drive_dist(eve, seconds) {
         eve.drivetime_secs = seconds;
         eve.drivetime = seconds_to_human_readable(seconds);
-        redraw();
     }
     function async_set_drive_dist(eve) {
         url = "https://router.project-osrm.org/table/v1/driving/" + homecoords + ";" + eve.machine_readable_location.split(",").reverse().join(",")
@@ -131,6 +130,7 @@
             thread_like_callback();
             return;
         }
+        redraw();
         const request = new Request(url, {
             method: "GET",
         });
@@ -530,8 +530,6 @@
                     // todo: The same console.asserts should be done in spawn_event
                     console.assert("genre" in el);
                     console.assert("frequency" in el);
-                    console.assert("human_readable_location" in el);
-                    console.assert("machine_readable_location" in el);
                     eves.push(el);
                 }
             } else {
@@ -558,8 +556,8 @@
                     };
                     wd = weekdays[ar.date_rule[1]];
 
-                    var walker = new Date();
                     for (var i = -1; i < 12; i++) {
+                        var walker = new Date();
                         walker.setUTCMonth(now.getUTCMonth() + i);
                         walker.setUTCDate(1);
                         offset = wd - walker.getUTCDay();
