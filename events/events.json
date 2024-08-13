@@ -1693,7 +1693,9 @@
             "start": "2024-09-13",
             "end": "2024-09-14",
             "human_readable_location": "Berlin",
-            "machine_readable_location": "52.51613,13.40907"
+            "machine_readable_location": "52.51613,13.40907",
+            "frequency": "Irregular",
+            "genre": "Chaos-Event"
         }
     ],
     "Vintage Computing Festival Berlin": [
@@ -1702,7 +1704,9 @@
             "start": "2024-10-19",
             "end": "2024-10-21",
             "human_readable_location": "Berlin",
-            "machine_readable_location": "52.45692,13.52643"
+            "machine_readable_location": "52.45692,13.52643",
+            "frequency": "Yearly",
+            "genre": "IT-Event"
         }
     ]
 }
