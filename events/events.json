@@ -719,6 +719,10 @@
         {
             "start": "2024-06-15",
             "end": "2024-06-15"
+        },
+        {
+            "start": "2024-09-28",
+            "end": "2024-09-28"
         }
     ],
     "Heilbronner Suitwalk": [
@@ -852,6 +856,21 @@
         {
             "start": "2024-10-19",
             "end": "2024-10-19"
+        }
+    ],
+    "AYCE Stammtisch Karlsruhe": [
+        {
+            "genre": "Furry-Stammtisch",
+            "human_readable_location": "Karlsruhe, Baden-Württemberg",
+            "machine_readable_location": "49.00113,8.38402",
+            "frequency": "Irregular",
+            "ticket_price": "Free",
+            "start": "2024-11-15",
+            "end": "2024-11-15"
+        },
+        {
+            "start": "2025-02-08",
+            "end": "2025-02-08"
         }
     ],
     "Fursuitwalk Speyer": [
@@ -1026,8 +1045,50 @@
             "expected_attendees": "100"
         },
         {
+            "link": "https://reg.rheinfurs.de/meetup/6-RheinFurs-Suitwalk-kurpark-wiesbaden",
             "start": "2024-07-06",
             "end": "2024-07-06"
+        },
+        {
+            "link": "https://reg.rheinfurs.de/meetup/7-RheinFurs-Suitwalk-kurpark-wiesbaden",
+            "start": "2024-10-05",
+            "end": "2024-10-05"
+        }
+    ],
+    "Fursuitwalk Darmstadt": [
+        {
+            "link": "https://t.me/Rot_Blau_Events/240",
+            "genre": "Furry-Suitwalk",
+            "human_readable_location": "Darmstadt, Hesse",
+            "machine_readable_location": "49.86884,8.64969",
+            "start": "2024-09-07",
+            "end": "2024-09-07",
+            "frequency": "Irregular",
+            "ticket_price": "Free"
+        }
+    ],
+    "Fursuitwalk Frankfurt": [
+        {
+            "link": "https://t.me/Rot_Blau_Events/240",
+            "genre": "Furry-Suitwalk",
+            "human_readable_location": "Frankfurt, Hesse",
+            "machine_readable_location": "50.11566,8.69090",
+            "start": "2024-09-14",
+            "end": "2024-09-14",
+            "frequency": "Irregular",
+            "ticket_price": "Free"
+        }
+    ],
+    "Fursuitwalk Aschaffenburg": [
+        {
+            "link": "https://t.me/furryeventsabinfo/51",
+            "genre": "Furry-Suitwalk",
+            "human_readable_location": "Aschaffenburg, Hesse",
+            "machine_readable_location": "49.97754,9.14487",
+            "start": "2024-09-28",
+            "end": "2024-09-28",
+            "frequency": "Irregular",
+            "ticket_price": "Free"
         }
     ],
     "Rheinfurs Stammtisch": [
