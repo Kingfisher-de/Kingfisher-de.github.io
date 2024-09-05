@@ -79,6 +79,10 @@
             "dev_comment": "Source for expected_attendees: https://www.mountainbytes.ch/registration 'Who's coming' lists 46 names",
             "start": "2024-02-16",
             "end": "2024-02-18"
+        },
+        {
+            "start": "2025-02-14",
+            "end": "2025-02-16"
         }
     ],
     "NordicFuzzCon": [
@@ -538,6 +542,10 @@
             "dev_comment": "Source for expected_attendees: https://en.wikifur.com/wiki/List_of_in-person_furry_conventions_by_attendance",
             "start": "2024-08-14",
             "end": "2024-08-18"
+        },
+        {
+            "start": "2025-08-17",
+            "end": "2025-08-21"
         }
     ],
     "FrOSCon": [
