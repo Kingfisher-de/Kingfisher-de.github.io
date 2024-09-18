@@ -1777,5 +1777,16 @@
             "frequency": "Yearly",
             "genre": "IT-Event"
         }
+    ],
+    "Hackumenta": [
+        {
+            "link": "https://2024.hackumenta.de/",
+            "start": "2024-10-25",
+            "end": "2024-10-27",
+            "human_readable_location": "Kassel, Hesse",
+            "machine_readable_location": "51.32088,9.49504",
+            "frequency": "Irregular",
+            "genre": "Chaos-Event"
+        }
     ]
 }
