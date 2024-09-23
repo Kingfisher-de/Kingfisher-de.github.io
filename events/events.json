@@ -1788,5 +1788,16 @@
             "frequency": "Irregular",
             "genre": "Chaos-Event"
         }
+    ],
+    "RhönDance": [
+        {
+            "link": "https://pretix.eu/fa2p/RD4/",
+            "genre": "Furdance",
+            "frequency": "Irregular",
+            "start": "2024-10-19 18:00",
+            "end": "2024-10-19 (3:99 the next morning)",
+            "human_readable_location": "Oberelsbach, Bavaria",
+            "machine_readable_location": "50.44089,10.11860"
+        }
     ]
 }
