@@ -1756,6 +1756,17 @@
             "machine_readable_location": "48.73754,9.30597"
         }
     ],
+    "Ulmer Suitwalk": [
+        {
+            "link": "https://t.me/c/1765604104/119",
+            "genre": "Furry-Suitwalk",
+            "frequency": "Irregular",
+            "start": "2024-11-16",
+            "end": "2024-11-16",
+            "human_readable_location": "Ulm, Baden-Württemberg",
+            "machine_readable_location": "48.39996,9.98557"
+        }
+    ],
     "Bildet Netze!": [
         {
             "link": "https://netzpolitik.org/bildet-netze/",
