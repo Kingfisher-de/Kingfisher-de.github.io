@@ -47,6 +47,10 @@
             "ticket_price": "No Registration Required",
             "start": "2024-02-03",
             "end": "2024-02-04 (Kicked out at 20:00)"
+        },
+        {
+            "start": "2025-02-01",
+            "end": "2025-02-02"
         }
     ],
     "Hackerhotel": [
@@ -138,6 +142,10 @@
             "dev_comment": "Source for expected_attendees: https://en.wikipedia.org/wiki/Chemnitz_Linux_Days",
             "start": "2024-03-16",
             "end": "2024-03-17"
+        },
+        {
+            "start": "2025-03-22",
+            "end": "2025-03-23"
         }
     ],
     "CloudFest": [
@@ -744,6 +752,10 @@
         {
             "start": "2024-09-07",
             "end": "2024-09-07"
+        },
+        {
+            "start": "2024-11-02",
+            "end": "2024-11-02"
         }
     ],
     "Heilbronner Furry-Stammtisch": {
@@ -1789,6 +1801,17 @@
             "genre": "IT-Event"
         }
     ],
+    "Hackergarten Stuttgart": {
+        "link": "https://www.meetup.com/de-DE/hackergarten-stuttgart/",
+        "human_readable_location": "Vaihingen, Baden-Württemberg",
+        "machine_readable_location": "48.72593824469655, 9.114459579022661",
+        "genre": "IT-Event",
+        "date_rule": [
+            "Monthly",
+            "Tuesday",
+            "1"
+        ]
+    },
     "Hackumenta": [
         {
             "link": "https://2024.hackumenta.de/",
