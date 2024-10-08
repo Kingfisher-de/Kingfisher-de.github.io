@@ -1804,7 +1804,7 @@
     "Hackergarten Stuttgart": {
         "link": "https://www.meetup.com/de-DE/hackergarten-stuttgart/",
         "human_readable_location": "Vaihingen, Baden-Württemberg",
-        "machine_readable_location": "48.72593824469655, 9.114459579022661",
+        "machine_readable_location": "48.72593,9.11445",
         "genre": "IT-Event",
         "date_rule": [
             "Monthly",
