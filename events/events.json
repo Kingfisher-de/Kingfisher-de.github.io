@@ -1833,5 +1833,16 @@
             "human_readable_location": "Oberelsbach, Bavaria",
             "machine_readable_location": "50.44089,10.11860"
         }
+    ],
+    "Sonoj Convention": [
+        {
+            "link": "https://sonoj.org/2024/",
+            "start": "2024-10-19",
+            "end": "2024-10-21",
+            "human_readable_location": "Cologne, North Rhine-Westphalia",
+            "machine_readable_location": "50.95056,6.91290",
+            "frequency": "Yearly",
+            "genre": "Misc."
+        }
     ]
 }
