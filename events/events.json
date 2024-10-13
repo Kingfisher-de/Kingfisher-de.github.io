@@ -925,6 +925,10 @@
         {
             "start": "2024-07-20",
             "end": "2024-07-20"
+        },
+        {
+            "start": "2024-10-31",
+            "end": "2024-10-31"
         }
     ],
     "Fursuitwalk Weinheim": [
@@ -970,6 +974,11 @@
             "frequency": "Yearly",
             "start": "2024-05-11 18:00",
             "end": "2024-05-11 (4:00 am tag dannach)"
+        },
+        {
+            "link": "https://t.me/rheinfurs/153",
+            "start": "2024-05-17 18:00",
+            "end": "2024-05-17 (4:00 am tag dannach)"
         }
     ],
     "Comic Con Stuttgart": [
@@ -1766,6 +1775,28 @@
             "expected_attendees": "150",
             "human_readable_location": "Esslingen am Neckar, Baden-Württemberg",
             "machine_readable_location": "48.73754,9.30597"
+        }
+    ],
+    "Ulmer Furs Stammtisch": [
+        {
+            "link": "https://ulmer-furs.de/stammtisch-2024-10-18/",
+            "genre": "Furry-Stammtisch",
+            "frequency": "Irregular",
+            "start": "2024-10-18",
+            "end": "2024-10-18",
+            "human_readable_location": "Ulm, Baden-Württemberg",
+            "machine_readable_location": "48.39054,10.01624"
+        }
+    ],
+    "Ulmer Furs Bowlen": [
+        {
+            "link": "https://ulmer-furs.de/event-2024-10-26/",
+            "genre": "Misc.",
+            "frequency": "Irregular",
+            "start": "2024-10-26",
+            "end": "2024-10-26",
+            "human_readable_location": "Ulm, Baden-Württemberg",
+            "machine_readable_location": "48.29968,10.96373"
         }
     ],
     "Ulmer Suitwalk": [
