@@ -1364,8 +1364,8 @@
         },
         {
             "link": "https://t.me/bruslerfurs/25",
-            "start": "2024-11-30",
-            "end": "2024-11-30"
+            "start": "2024-12-07",
+            "end": "2024-12-07"
         }
     ],
     "Elbefurdance": [
@@ -1438,6 +1438,13 @@
             "end": "2024-09-09",
             "human_readable_location": "Vienna, Austria",
             "machine_readable_location": "48.20946,16.35609"
+        },
+        {
+            "link": "https://events.ccc.de/2024/10/18/jetzt7-geekend/",
+            "start": "2024-12-13",
+            "end": "2024-12-15",
+            "human_readable_location": "Ulm, Baden-Württemberg",
+            "machine_readable_location": "48.39628,10.00199"
         }
     ],
     "Hack im Pott": [
