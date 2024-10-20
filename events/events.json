@@ -1882,5 +1882,16 @@
             "frequency": "Yearly",
             "genre": "Misc."
         }
+    ],
+    "Südstaatenfurs Lasertag": [
+        {
+            "link": "https://s-s-f.de/events/lasertag-night-8-semi-catastrophic-edition",
+            "start": "2024-12-14",
+            "end": "2024-12-14",
+            "human_readable_location": "Speyer, Rhineland-Palatinate",
+            "machine_readable_location": "49.33404,8.44400",
+            "frequency": "Yearly",
+            "genre": "Misc."
+        }
     ]
 }
