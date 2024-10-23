@@ -1893,5 +1893,27 @@
             "frequency": "Yearly",
             "genre": "Misc."
         }
+    ],
+    "Hackoween": [
+        {
+            "link": "https://hackoween.de/",
+            "start": "2024-10-31",
+            "end": "2024-11-04",
+            "human_readable_location": "Düsseldorf, North Rhine-Westphalia",
+            "machine_readable_location": "51.21254,6.79962",
+            "frequency": "Irregular",
+            "genre": "Chaos-Event"
+        }
+    ],
+    "Labortage": [
+        {
+            "link": "https://wiki.das-labor.org/w/Labortage_2024",
+            "start": "2024-11-15",
+            "end": "2024-11-18",
+            "human_readable_location": "Bochum, North Rhine-Westphalia",
+            "machine_readable_location": ": 51.48094,7.20860",
+            "frequency": "Yearly",
+            "genre": "Chaos-Event"
+        }
     ]
 }
