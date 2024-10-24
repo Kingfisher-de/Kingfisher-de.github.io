@@ -568,6 +568,13 @@
             "dev_comment": "Source for expected_attendees: https://www.h-brs.de/de/inf/termin/freie-software-und-open-source-auf-der-18-froscon",
             "start": "2024-08-17",
             "end": "2024-08-18"
+        },
+        {
+            "link": "https://froscon.org/",
+            "start": "2025-08-16",
+            "end": "2025-08-18",
+            "human_readable_location": "Sankt Augistin, North Rhine-Westphalia",
+            "machine_readable_location": "50.78056,7.18215"
         }
     ],
     "WAMP": [
@@ -1128,6 +1135,11 @@
             "link": "https://reg.rheinfurs.de/en/meetup/1-rheinfurs-grillabend-stammtisch",
             "start": "2024-07-08",
             "end": "2024-07-08"
+        },
+        {
+            "link": "https://reg.rheinfurs.de/meetup/6-rheinfurs-stammtisch-minigolf",
+            "start": "2024-10-26",
+            "end": "2024-10-26"
         }
     ],
     "Weinbergfurdance": [
