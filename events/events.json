@@ -408,15 +408,16 @@
             "human_readable_location": "Nürnberg, Bavaria",
             "machine_readable_location": "49.43427,11.04045",
             "frequency": "2 times per year",
-            "2_start": "2024-11-02",
-            "2_end": "2024-11-02",
             "ticket_price": "30 €",
             "expected_attendees": "500",
             "dev_comment": "Source for expected_attendees: https://www.bayern-furs.de/events/bfd",
-            "dev_comment_2": "todo: 2_start and 2_end is never read",
             "dev_comment_3": "In the winter the location is different, but also in nürnberg.",
             "start": "2024-06-15",
             "end": "2024-06-15"
+        },
+        {
+            "start": "2024-11-02",
+            "end": "2024-11-02"
         }
     ],
     "Tübix": [
