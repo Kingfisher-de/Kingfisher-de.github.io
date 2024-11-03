@@ -420,6 +420,19 @@
             "end": "2024-11-02"
         }
     ],
+    "Lübecker Furdance": [
+        {
+            "link": "https://hansefurs.de/event/luebecker-furdance-2/",
+            "genre": "Furdance",
+            "human_readable_location": "Lübeck, Schleswig-Holstein",
+            "machine_redable_location": "53.87600,10.68840",
+            "frequency": "Yearly",
+            "expected_attendees": "180",
+            "dev_comment": "Source for expected_attendees: They sold 160 out of 200 tickets until 03.11.2024",
+            "start": "2024-11-16 (19:00)",
+            "end": "2024-11-16 (4:00 am tag dannach)"
+        }
+    ],
     "Tübix": [
         {
             "link": "https://www.tuebix.org/",
@@ -1664,6 +1677,13 @@
             "frequency": "Yearly",
             "start": "2024-08-30",
             "end": "2024-09-02",
+            "human_readable_location": "Offenbach, Hesse",
+            "machine_readable_location": "50.02291,9.02122"
+        },
+        {
+            "link": "",
+            "start": "2025-07-24",
+            "end": "2025-07-28",
             "human_readable_location": "Offenbach, Hesse",
             "machine_readable_location": "50.02291,9.02122"
         }
