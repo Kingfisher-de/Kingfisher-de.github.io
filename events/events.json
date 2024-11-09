@@ -484,6 +484,14 @@
             "end": "2024-07-06"
         }
     ],
+    "Lakefuzzies Stammtisch": [
+        {
+            "genre": "Furry-Stammtisch",
+            "frequency": "Irregular",
+            "start": "2024-12-14",
+            "end": "2024-12-14"
+        }
+    ],
     "Hacken Open Air": [
         {
             "link": "https://hackenopenair.de/",
@@ -777,6 +785,10 @@
         {
             "start": "2024-11-02",
             "end": "2024-11-02"
+        },
+        {
+            "start": "2025-03-01",
+            "end": "2025-03-01"
         }
     ],
     "Heilbronner Furry-Stammtisch": {
@@ -975,6 +987,10 @@
         {
             "start": "2024-10-12",
             "end": "2024-10-12"
+        },
+        {
+            "start": "2024-11-30",
+            "end": "2024-11-30"
         }
     ],
     "Sachsen Furdance": [
@@ -1835,6 +1851,11 @@
             "end": "2024-10-18",
             "human_readable_location": "Ulm, Baden-Württemberg",
             "machine_readable_location": "48.39054,10.01624"
+        },
+        {
+            "link": "https://ulmer-furs.de/stammtisch-2024-12-15/",
+            "start": "2024-12-15",
+            "end": "2024-12-15"
         }
     ],
     "Ulmer Furs Bowlen": [
