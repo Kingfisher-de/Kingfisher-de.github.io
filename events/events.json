@@ -180,7 +180,9 @@
         },
         {
             "start": "2025-03-26",
-            "end": "2025-03-29"
+            "end": "2025-03-29",
+            "human_readable_location": "Münster, North Rhine-Westphalia",
+            "machine_readable_location": "51.96959,7.59583"
         }
     ],
     "Easterhegg": [
