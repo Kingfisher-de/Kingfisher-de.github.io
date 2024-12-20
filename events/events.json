@@ -128,6 +128,10 @@
             "ticket_price": "45 CHF",
             "start": "2024-03-01",
             "end": "2024-03-02"
+        },
+        {
+            "start": "2025-02-28",
+            "end": "2025-03-01"
         }
     ],
     "Chemnitzer Linuxtage": [
@@ -1558,6 +1562,13 @@
             "end": "2024-02-26",
             "human_readable_location": "Wülfrath, North Rhine-Westphalia",
             "machine_readable_location": "51.28250,7.03072"
+        },
+        {
+            "link": "https://hackimpott.de/",
+            "start": "2025-01-31",
+            "end": "2025-02-03",
+            "human_readable_location": "Wülfrath, North Rhine-Westphalia",
+            "machine_readable_location": "51.28250,7.03072"
         }
     ],
     "deutscher Tag des offenen Hackspaces": [
@@ -2026,6 +2037,16 @@
             "end": "2024-11-18",
             "human_readable_location": "Bochum, North Rhine-Westphalia",
             "machine_readable_location": "51.48094,7.20860",
+            "frequency": "Yearly",
+            "genre": "Chaos-Event"
+        }
+    ],
+    "Tag des offenen Hackspace": [
+        {
+            "link": "https://www.ccc.de/regional",
+            "start": "2025-03-29",
+            "end": "2025-03-30",
+            "human_readable_location": "In teilnehmenden Spaces",
             "frequency": "Yearly",
             "genre": "Chaos-Event"
         }
