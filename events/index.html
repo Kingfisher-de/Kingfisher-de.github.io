@@ -158,8 +158,13 @@
         if (loaded_hc != homecoords) {
             homecoords = loaded_hc
             for (eve of eves) {
-                eve.drivetime_secs = undefined;
-                eve.drivetime = "loading ..."
+                if (eve.machine_readable_location === undefined) {
+                    eve.drivetime_secs = undefined;
+                    eve.drivetime = "multiple places"
+                } else {
+                    eve.drivetime_secs = undefined;
+                    eve.drivetime = "loading ..."
+                }
             }
         }
         if (homecoords !== undefined) {
@@ -171,6 +176,9 @@
                     continue;
                 }
                 if (eve.genre == "Public Holiday") {
+                    continue;
+                }
+                if (eve.machine_readable_location === undefined) {
                     continue;
                 }
                 // fill in the the cached values first
@@ -407,6 +415,7 @@
                     }
                 })
                 .then((response) => {
+                    console.log(response);
                     response = response[0]
                     var newdiv = document.createElement("div");
                     newdiv.id = "CityName";
