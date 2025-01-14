@@ -523,6 +523,12 @@
             "machine_readable_location": "48.05547,8.46143",
             "start": "2024-12-14",
             "end": "2024-12-14"
+        },
+        {
+            "start": "2025-02-01",
+            "end": "2025-02-01",
+            "human_readable_location": "Meersburg, Baden-Württemberg",
+            "machine_readable_location": "47.69477,9.26784"
         }
     ],
     "Hacken Open Air": [
