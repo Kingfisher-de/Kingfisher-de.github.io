@@ -9,6 +9,13 @@
             "frequency": "Yearly",
             "start": "2024-10-03",
             "end": "2024-10-06 (afternoon)"
+        },
+        {
+            "link": "https://2025.mrmcd.net/",
+            "start": "2025-09-12",
+            "end": "2025-09-15",
+            "human_readable_location": "Darmstadt, Hesse",
+            "machine_readable_location": "49.87771,8.65501"
         }
     ],
     "FSCK": [
@@ -206,6 +213,13 @@
             "machine_readable_location": "49.00236,12.09738",
             "start": "2024-03-29",
             "end": "2024-04-01"
+        },
+        {
+            "link": "https://eh22.easterhegg.eu/",
+            "start": "2025-04-18",
+            "end": "2025-04-22",
+            "human_readable_location": "Hamburg",
+            "machine_readable_location": "53.58331,10.02179"
         }
     ],
     "Grazer Linuxtage": [
@@ -308,6 +322,10 @@
             "frequency": "Yearly",
             "start": "2024-05-23",
             "end": "2024-05-26"
+        },
+        {
+            "start": "2025-06-12",
+            "end": "2025-06-15"
         }
     ],
     "Electromagnetic Field": [
@@ -334,6 +352,13 @@
             "ticket_price": "No Registration Required",
             "start": "2024-05-30",
             "end": "2024-06-02"
+        },
+        {
+            "link": "https://entropia.de/GPN23",
+            "start": "2025-06-19",
+            "end": "2025-06-23",
+            "human_readable_location": "Karlsruhe, Baden-Württemberg",
+            "machine_readable_location": "49.00113,8.38402"
         }
     ],
     "IGER(ia)": [
@@ -509,6 +534,13 @@
             "frequency": "Yearly",
             "start": "2024-07-09",
             "end": "2024-07-13"
+        },
+        {
+            "link": "https://hackenopenair.de/",
+            "start": "2025-07-01",
+            "end": "2025-07-06",
+            "human_readable_location": "Gifhorn, Lower Saxony",
+            "machine_readable_location": "52.46286,10.60452"
         }
     ],
     "Südstaaten Furdance": [
@@ -746,7 +778,12 @@
         },
         {
             "start": "2024-12-27",
-            "end": "2024-12-30"
+            "end": "2024-12-30 (At 18:00 some people were told to move)"
+        },
+        {
+            "link": "",
+            "start": "2025-12-27",
+            "end": "2025-12-31"
         }
     ],
     "Tübinger Suitwalk": [
@@ -1581,6 +1618,13 @@
             "end": "2025-02-03",
             "human_readable_location": "Wülfrath, North Rhine-Westphalia",
             "machine_readable_location": "51.28250,7.03072"
+        },
+        {
+            "link": "https://hackimpott.de/",
+            "start": "2025-02-28",
+            "end": "2025-03-03",
+            "human_readable_location": "Wülfrath, North Rhine-Westphalia",
+            "machine_readable_location": "51.28250,7.03072"
         }
     ],
     "deutscher Tag des offenen Hackspaces": [
@@ -1686,6 +1730,13 @@
             "end": "2024-08-05",
             "human_readable_location": "Hanover, Lower Saxony",
             "machine_readable_location": "52.38809,9.71803"
+        },
+        {
+            "link": "https://hackover.de",
+            "start": "2025-07-04",
+            "end": "2025-07-07",
+            "human_readable_location": "Hanover, Lower Saxony",
+            "machine_readable_location": "52.38809,9.71803"
         }
     ],
     "Vintage Computer Festival Europe": [
@@ -1728,6 +1779,13 @@
             "frequency": "Yearly",
             "start": "2024-10-11",
             "end": "2024-10-12",
+            "human_readable_location": "Bielefeld, North Rhine-Westphalia",
+            "machine_readable_location": "52.022009,8.54367"
+        },
+        {
+            "link": "https://bigbrotherawards.de/",
+            "start": "2025-10-10",
+            "end": "2025-10-11",
             "human_readable_location": "Bielefeld, North Rhine-Westphalia",
             "machine_readable_location": "52.022009,8.54367"
         }
@@ -2059,6 +2117,28 @@
             "start": "2025-03-29",
             "end": "2025-03-30",
             "human_readable_location": "In teilnehmenden Spaces",
+            "frequency": "Yearly",
+            "genre": "Chaos-Event"
+        }
+    ],
+    "Schwarzwald-Baar-Heuberg Meet": [
+        {
+            "frequency": "Irregular",
+            "genre": "Furry-Stammtisch",
+            "start": "2025-03-08",
+            "end": "2025-03-08",
+            "link": "https://t.me/c/2143872702/5093",
+            "human_readable_location": "Triberg, Baden-Württemberg",
+            "machine_readable_location": "48.13241,8.23236"
+        }
+    ],
+    "WICMP": [
+        {
+            "link": "https://w.icmp.camp/10/",
+            "start": "2025-02-28",
+            "end": "2025-03-03",
+            "human_readable_location": "Erlangen, Bavaria",
+            "machine_readable_location": "49.60005,11.00279",
             "frequency": "Yearly",
             "genre": "Chaos-Event"
         }
